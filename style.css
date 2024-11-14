@@ -75,6 +75,13 @@ body {
     height: auto;
 }
 
+.h-min {
+    width: 50%;
+    height: auto;
+}
+
+
+
 
 /* Each container takes half the width */
 .flex {
@@ -101,3 +108,10 @@ body {
     width: 100%;
     height: auto;
 }
+
+/* Ensure .ct-h-3 has proper size and spacing between items */
+.ct-h-100 {
+    border: 5px solid rgba(0, 251, 75, 0.445);
+    width: 100%;
+}
+
