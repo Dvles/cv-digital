@@ -9,7 +9,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width without overflow */
+    width: 100%;
     height: 50px;
     z-index: 10;
     box-sizing: border-box;
@@ -18,8 +18,8 @@ body {
 /* .layout section styling */
 .layout {
     border: 5px solid rgb(152, 213, 253);
-    height: calc(100vh - 50px); /* Full viewport height minus fixed menu height */
-    margin-top: 50px; /* Creates space for the fixed menu without overlap */
+    height: calc(100vh - 50px);
+    margin-top: 50px;
     box-sizing: border-box;
     background-color: rgb(236, 255, 255);
     display: flex;
@@ -27,7 +27,7 @@ body {
 }
 
 /* Containers inside .layout */
-.ct-v-1, .ct-v-2, .ct-h-1, .flex-start, .ct-h-2, .ct-h-3 {
+.ct-v-1, .ct-v-2, .ct-h-1, .flex, .ct-h-2, .ct-h-3 {
     border: 5px solid rgba(255, 124, 17, 0.445);
     box-sizing: border-box;
 }
@@ -43,18 +43,18 @@ body {
 
 /* Two-column layout for Section 3 */
 #bio {
-    flex-direction: row; /* Arrange children side-by-side */
+    flex-direction: row;
     justify-content: center;
 }
 
 .ct-h-1 {
-    width: 25%; /* Maintain specified width */
-    height: 100%; /* Full height of the section */
+    width: 25%;
+    height: 100%;
 }
 
 /* Optional: Add space between columns in Section 3 */
 #education, #experience {
-    margin: 0 5px; /* Adjusts spacing between columns */
+    margin: 0 5px;
 }
 
 /* Flexbox layout for Section 4 */
@@ -63,35 +63,41 @@ body {
     justify-content: center;
 }
 
-/* Each container takes half the width */
+.bdr {
+    border: 5px solid rgba(255, 124, 17, 0.445);
+    box-sizing: border-box;
+}
 
-.flex-start {
+
+
+.w-50-h-100 {
     width: 50%;
-    height: 100%; /* Full height of the section */
-    display: flex; /* Enable flex layout for inner alignment */
-}
-
-.f-start {
-    justify-content: flex-start; /* Align children starting from the left */
+    height: auto;
 }
 
 
-/* Align .ct-h-2 to the right within .flex-start */
+/* Each container takes half the width */
+.flex {
+    display: flex;
+}
+
+/* Stack children vertically in column layout */
+.f-dir-column {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Align .ct-h-2 to the right within .flex */
 .ct-h-2 {
     border: 5px solid rgba(71, 58, 255, 0.445);
-    width: 50%; 
+    width: 50%;
     height: auto;
-    margin-left: auto; /* This pushes .ct-h-2 to the right */
+    margin-left: auto;
 }
 
-/* Ensure .ct-h-3 has proper size */
+/* Ensure .ct-h-3 has proper size and spacing between items */
 .ct-h-3 {
     border: 5px solid rgba(71, 58, 255, 0.445);
-    width: 100%; 
+    width: 100%;
     height: auto;
-}
-
-/* Optional: Add space between columns in Section 4 */
-#skills-details, #skills-isotope {
-    margin: 0 0px; /* Adjusts spacing between columns */
 }
