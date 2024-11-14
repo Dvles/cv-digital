@@ -15,10 +15,7 @@ body {
     box-sizing: border-box;
 }
 
-
-
-
-/* .struct section styling */
+/* .layout section styling */
 .layout {
     border: 5px solid rgb(152, 213, 253);
     height: calc(100vh - 50px); /* Full viewport height minus fixed menu height */
@@ -30,19 +27,17 @@ body {
 }
 
 /* Containers inside .layout */
-.ct-1, .struct_c2, .struct_c3, .struct_c4 {
+.ct-v-1, .ct-v-2, .ct-h-1, .flex-start, .ct-h-2, .ct-h-3 {
     border: 5px solid rgba(255, 124, 17, 0.445);
     box-sizing: border-box;
 }
 
-
-
 /* Set individual container heights for Section 2 */
-.ct-1 {
+.ct-v-1 {
     height: 24%;
 }
 
-.struct_c2 {
+.ct-v-2 {
     height: 38%;
 }
 
@@ -52,52 +47,51 @@ body {
     justify-content: center;
 }
 
-.struct_c3 {
+.ct-h-1 {
     width: 25%; /* Maintain specified width */
     height: 100%; /* Full height of the section */
 }
 
 /* Optional: Add space between columns in Section 3 */
-#container4, #container5 {
+#education, #experience {
     margin: 0 5px; /* Adjusts spacing between columns */
 }
 
 /* Flexbox layout for Section 4 */
-#skills {
+#skills, #projects {
     flex-direction: row;
     justify-content: center;
 }
 
 /* Each container takes half the width */
-.struct_c4 {
+
+.flex-start {
     width: 50%;
     height: 100%; /* Full height of the section */
     display: flex; /* Enable flex layout for inner alignment */
-    justify-content: flex-end; /* Align content to the right */
-    box-sizing: border-box;
 }
 
-/* Align .struct_c5 to the right within .struct_c4 */
-.struct_c5 {
+.f-start {
+    justify-content: flex-start; /* Align children starting from the left */
+}
+
+
+/* Align .ct-h-2 to the right within .flex-start */
+.ct-h-2 {
     border: 5px solid rgba(71, 58, 255, 0.445);
     width: 50%; 
     height: auto;
-
+    margin-left: auto; /* This pushes .ct-h-2 to the right */
 }
 
-/* Align .struct_c5 to the right within .struct_c4 */
-.struct_c6 {
+/* Ensure .ct-h-3 has proper size */
+.ct-h-3 {
     border: 5px solid rgba(71, 58, 255, 0.445);
     width: 100%; 
     height: auto;
-
 }
-
-
 
 /* Optional: Add space between columns in Section 4 */
 #skills-details, #skills-isotope {
     margin: 0 0px; /* Adjusts spacing between columns */
 }
-
-
