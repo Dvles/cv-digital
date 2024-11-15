@@ -27,7 +27,12 @@ body {
 }
 
 /* Containers inside .layout */
-.ct-v-1, .ct-v-2, .ct-h-1, .flex, .ct-h-2, .ct-h-3 {
+.ct-v-1,
+.ct-v-2,
+.ct-h-1,
+.flex,
+.ct-h-2,
+.ct-h-3 {
     border: 5px solid rgba(255, 124, 17, 0.445);
     box-sizing: border-box;
 }
@@ -53,12 +58,14 @@ body {
 }
 
 /* Optional: Add space between columns in Section 3 */
-#education, #experience {
+#education,
+#experience {
     margin: 0 5px;
 }
 
 /* Flexbox layout for Section 4 */
-#skills, #projects {
+#skills,
+#projects {
     flex-direction: row;
     justify-content: center;
 }
@@ -89,16 +96,23 @@ body {
 
 
 #project-content {
-    height: 100%; /* Constrain it to its parent container */
-    overflow-y: auto; /* Enable vertical scrolling for overflowing content */
-    overflow-x: hidden; /* Prevent horizontal scrolling if undesired */
+    height: 100%;
+    /* Constrain it to its parent container */
+    overflow-y: auto;
+    /* Enable vertical scrolling for overflowing content */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling if undesired */
 }
 
 #project-content img {
-    width: 100%; /* Make the image take the full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    min-width: 200px; /* Set a minimum width */
-    box-sizing: border-box; /* Include padding/border in size calculations */
+    width: 100%;
+    /* Make the image take the full width of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    min-width: 200px;
+    /* Set a minimum width */
+    box-sizing: border-box;
+    /* Include padding/border in size calculations */
 }
 
 
@@ -132,16 +146,55 @@ body {
 .ct-h-100 {
     border: 5px solid rgba(0, 251, 75, 0.445);
     width: 100%;
-   
+
 }
 
 .ct-h-100.flex {
     display: flex;
-    gap: 20px; /* Add desired space between elements */
+    gap: 20px;
+    /* Add desired space between elements */
 }
 
-.ct-h-100.flex > div {
-    flex: 1; /* Allow elements to grow/shrink as needed */
-    min-width: 200px; /* Ensure a minimum width */
-    max-width: 400px; /* Optional: Limit maximum width for better control */
+.ct-h-100.flex>div {
+    flex: 1;
+    /* Allow elements to grow/shrink as needed */
+    min-width: 200px;
+    /* Ensure a minimum width */
+    max-width: 400px;
+    /* Optional: Limit maximum width for better control */
+}
+
+
+
+
+
+
+
+@media (max-width: 995px) {
+
+    /* TO REMOVE AFTER STRUCTURE'S COMPLETED */
+    body {
+        background-color: blue;
+    }
+
+        /* Change layout to column for project content */
+        .ct-h-100.flex {
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 100px;
+        }
+    
+        /* Adjust child divs for better alignment in column layout */
+        .ct-h-100.flex > div {
+            width: 100%; /* Make each div take full width in column layout */
+            max-width: none; /* Remove max-width constraint for full-width alignment */
+            margin-bottom: 20px; /* Optional: Add spacing between divs */
+        }
+    
+        /* Optional: Remove margin for the last child */
+        .ct-h-100.flex > div:last-child {
+            margin-bottom: 0;
+        }
+
+
 }
