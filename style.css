@@ -26,6 +26,9 @@ body {
     flex-direction: column;
 }
 
+#name-cta p {
+    position: fixed;
+}
 
 /* ➔➔➔➔ CONTAINERS (CT)  */
 
