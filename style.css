@@ -135,3 +135,13 @@ body {
    
 }
 
+.ct-h-100.flex {
+    display: flex;
+    gap: 20px; /* Add desired space between elements */
+}
+
+.ct-h-100.flex > div {
+    flex: 1; /* Allow elements to grow/shrink as needed */
+    min-width: 200px; /* Ensure a minimum width */
+    max-width: 400px; /* Optional: Limit maximum width for better control */
+}
