@@ -233,3 +233,43 @@ body {
 
 
 }
+
+/* Media query to switch to column layout at 799px or below */
+@media (max-width: 799px) {
+
+    /* Ensure layout changes to column for the entire section */
+    #presentation {
+        display: flex;
+        flex-direction: column; /* Stack elements in a column */
+    }
+
+    /* Adjust the layout of .ct-v-1, .ct-v-2, and others for smaller screens */
+    .ct-v-1,
+    .ct-v-2 {
+        height: auto; /* Let the content size adjust naturally */
+        width: 100%; /* Make each container take full width */
+        margin: 10px 0; /* Add some spacing between elements */
+    }
+
+    /* Stack the items inside the .w-50 containers */
+    .w-50 {
+        width: 100%; 
+    }
+
+    /* Adjust the margin of the highlighted section if it has specific requirements */
+    .margin-l {
+        margin-left: 0; /* Reset left margin */
+    }
+
+    .margin-r {
+        margin-right: 0; /* Reset right margin */
+    }
+
+    /* Optional: Ensure text is centered for smaller screens */
+    .text-right {
+        text-align: center; /* Center the text in smaller screens */
+    }
+
+
+
+}
