@@ -3,7 +3,8 @@ body {
     margin: 0;
 }
 
-/* .menu settings to fix at the top */
+/* ➔➔➔➔ MENU  */
+/* Menu Fixed at Top */
 .menu {
     border: 5px solid rgba(255, 0, 212, 0.404);
     position: fixed;
@@ -15,6 +16,67 @@ body {
     box-sizing: border-box;
 }
 
+/* Menu Layout with 6 Columns */
+.menu-layout {
+    display: flex; /* Make the menu a flex container */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 50px; /* Match your header height */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Ensure the menu items are spaced correctly */
+}
+
+/* Menu Item Styling */
+.menu-layout li {
+    display: flex;
+    align-items: center;
+}
+
+/* Align content to the left */
+.jc-start {
+    justify-content: flex-start; /* Align items to the left */
+}
+
+/* Align content to the right */
+.jc-end {
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.menu-layout li a {
+    text-decoration: none; 
+    color: #000; 
+    text-transform: uppercase; 
+    font-weight: bold;
+   
+}
+
+/* No transition effects, keeping it minimal */
+.menu-layout li a:hover {
+    color: #007BFF; /* Hover color */
+}
+
+/* Empty column for alignment */
+.menu-layout .empty-column {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+/* Align menu items to the left */
+.menu {
+    padding-left: 20px; /* Adjust left padding to match the grid */
+    box-sizing: border-box; /* Maintain layout consistency */
+}
+
+
+
+
+
+
+/* ➔➔➔➔ MAIN CONTENT  */
+
+
+
 /* .layout section styling */
 .layout {
     border: 5px solid rgb(152, 213, 253);
@@ -22,6 +84,11 @@ body {
     margin-top: 50px;
     box-sizing: border-box;
     background-color: rgb(236, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+#name-cta  {
     display: flex;
     flex-direction: column;
 }
@@ -236,6 +303,23 @@ body {
 
 
 }
+
+/* Mobile-responsive Menu Adjustments */
+@media (max-width: 800px) {
+    .menu-layout {
+        grid-template-columns: 1fr 1fr; /* Two-column layout for small screens */
+        justify-items: center; /* Center-align menu items */
+    }
+
+    .menu-layout li {
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+
+    .empty-column {
+        display: none; /* Hide the empty column */
+    }
+}
+
 
 /* Media query to switch to column layout at 799px or below */
 @media (max-width: 799px) {
