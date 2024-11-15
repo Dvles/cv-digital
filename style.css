@@ -75,12 +75,24 @@ body {
     height: auto;
 }
 
+.w-30-h-100 {
+    width: 50%;
+    height: auto;
+}
+
+
+
 .h-min {
     width: 50%;
     height: auto;
 }
 
 
+#project-content {
+    height: 100%; /* Constrain it to its parent container */
+    overflow-y: auto; /* Enable vertical scrolling for overflowing content */
+    overflow-x: hidden; /* Prevent horizontal scrolling if undesired */
+}
 
 
 /* Each container takes half the width */
@@ -88,13 +100,13 @@ body {
     display: flex;
 }
 
-/* Stack children vertically in column layout */
+
 .f-dir-column {
     flex-direction: column;
     align-items: center;
 }
 
-/* Align .ct-h-2 to the right within .flex */
+
 .ct-h-2 {
     border: 5px solid rgba(71, 58, 255, 0.445);
     width: 50%;
@@ -113,5 +125,6 @@ body {
 .ct-h-100 {
     border: 5px solid rgba(0, 251, 75, 0.445);
     width: 100%;
+   
 }
 
