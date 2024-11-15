@@ -26,6 +26,9 @@ body {
     flex-direction: column;
 }
 
+
+/* ➔➔➔➔ CONTAINERS (CT)  */
+
 /* Containers inside .layout */
 .ct-v-1,
 .ct-v-2,
@@ -46,18 +49,48 @@ body {
     height: 38%;
 }
 
+/* ➔➔➔➔ WIDTHS  */
+
+
+.w-50 {
+    width: 50%;
+}
+
+/* ➔➔➔➔ MARGINS  */
+
+.margin-l {
+    margin-left: auto; /* Pushes the element to the right */
+}
+
+.margin-r {
+    margin-right: auto; 
+}
+
+
+/* ➔➔➔➔ TEXT ALIGNMENT  */
+
+.text-right{
+    text-align: right;
+}
+
+
+/* ➔➔➔➔ ID CONTAINERS */
+
 /* Two-column layout for Section 3 */
 #bio {
     flex-direction: row;
     justify-content: center;
 }
 
+/* ➔➔➔➔ CONTAINERS (CT)  */
+
+
 .ct-h-1 {
     width: 25%;
     height: 100%;
 }
 
-/* Optional: Add space between columns in Section 3 */
+/* ➔➔➔➔ ID CONTAINERS */
 #education,
 #experience {
     margin: 0 5px;
@@ -76,6 +109,7 @@ body {
 }
 
 
+/* ➔➔➔➔ WIDTHS  */
 
 .w-50-h-100 {
     width: 50%;
@@ -88,6 +122,7 @@ body {
 }
 
 
+/* ➔➔➔➔ HEIGHTS  */
 
 .h-min {
     width: 50%;
