@@ -94,6 +94,13 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling if undesired */
 }
 
+#project-content img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    min-width: 200px; /* Set a minimum width */
+    box-sizing: border-box; /* Include padding/border in size calculations */
+}
+
 
 /* Each container takes half the width */
 .flex {
