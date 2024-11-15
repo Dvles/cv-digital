@@ -3,6 +3,12 @@ body {
     margin: 0;
 }
 
+body, html {
+    scroll-padding-top: 55px; /* TO UPDATE W/ REAL CONTENT */
+  }
+
+
+
 /* ➔➔➔➔ MENU  */
 /* Menu Fixed at Top */
 .menu {
@@ -18,13 +24,13 @@ body {
 
 /* Menu Layout with 6 Columns */
 .menu-layout {
-    display: flex; /* Make the menu a flex container */
+    display: flex; 
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 50px; /* Match your header height */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Ensure the menu items are spaced correctly */
+    height: 50px; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 /* Menu Item Styling */
@@ -33,7 +39,7 @@ body {
     align-items: center;
 }
 
-/* Align content to the left */
+
 .jc-start {
     justify-content: flex-start; /* Align items to the left */
 }
@@ -64,8 +70,8 @@ body {
 
 /* Align menu items to the left */
 .menu {
-    padding-left: 20px; /* Adjust left padding to match the grid */
-    box-sizing: border-box; /* Maintain layout consistency */
+    padding-left: 20px; 
+    box-sizing: border-box;
 }
 
 
@@ -202,22 +208,15 @@ body {
 
 #project-content {
     height: 100%;
-    /* Constrain it to its parent container */
     overflow-y: auto;
-    /* Enable vertical scrolling for overflowing content */
     overflow-x: hidden;
-    /* Prevent horizontal scrolling if undesired */
 }
 
 #project-content img {
     width: 100%;
-    /* Make the image take the full width of its container */
     height: auto;
-    /* Maintain aspect ratio */
     min-width: 200px;
-    /* Set a minimum width */
     box-sizing: border-box;
-    /* Include padding/border in size calculations */
 }
 
 
@@ -257,16 +256,12 @@ body {
 .ct-h-100.flex {
     display: flex;
     gap: 20px;
-    /* Add desired space between elements */
 }
 
 .ct-h-100.flex>div {
     flex: 1;
-    /* Allow elements to grow/shrink as needed */
     min-width: 200px;
-    /* Ensure a minimum width */
     max-width: 400px;
-    /* Optional: Limit maximum width for better control */
 }
 
 
@@ -291,12 +286,11 @@ body {
     
         /* Adjust child divs for better alignment in column layout */
         .ct-h-100.flex > div {
-            width: 100%; /* Make each div take full width in column layout */
-            max-width: none; /* Remove max-width constraint for full-width alignment */
-            margin-bottom: 20px; /* Optional: Add spacing between divs */
+            width: 100%; 
+            max-width: none; 
+            margin-bottom: 20px; /* CHECK IF NEEDED */
         }
     
-        /* Optional: Remove margin for the last child */
         .ct-h-100.flex > div:last-child {
             margin-bottom: 0;
         }
@@ -333,9 +327,9 @@ body {
     /* Adjust the layout of .ct-v-1, .ct-v-2, and others for smaller screens */
     .ct-v-1,
     .ct-v-2 {
-        height: auto; /* Let the content size adjust naturally */
-        width: 100%; /* Make each container take full width */
-        margin: 10px 0; /* Add some spacing between elements */
+        height: auto; 
+        width: 100%; 
+        margin: 10px 0; 
     }
 
     /* Stack the items inside the .w-50 containers */
