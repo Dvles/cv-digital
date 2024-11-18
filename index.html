@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Resume</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
     <header id="header" class="menu">
         <nav>
             <ul class="menu-layout">
-                <li class="flex-start"><a href="#bio" >Bio</a></li>
+                <li class="flex-start"><a href="#bio">Bio</a></li>
                 <li class="flex-start"><a href="#skills">Skills</a></li>
-                <li class="flex-end"><a href="#projects" >Projects</a></li>
+                <li class="flex-end"><a href="#projects">Projects</a></li>
                 <li class="empty-column"></li>
                 <li class="flex-end"><a href="#contact">Contact</a></li>
                 <li class="flex-end"><a href="#fr">FR</a></li>
             </ul>
-        </nav>        
+        </nav>
     </header>
 
     <section id="presentation" class="layout">
@@ -71,79 +72,88 @@
         </div>
     </section>
 
-    <section id="projects" class="layout row-center">
-        <div id="p-filter" class="flex w-50-h-100">
-            <div id="p-filt-cat" class="ct-h-2">
-                Project category
-            </div>
-        </div>
-        <div id="project-content" class="flex f-dir-column w-50-h-100">
-            <div class="ct-h-100 flex">
-                <div class="h-min bdr">
-                    <img src="https://placehold.co/400x340">
+
+    <section id="scrolly-side">
+        <div class="scrolly">
+            <figure class="sticky">
+                <div class="bar-outer text-right">
+                    <div class="bar-inner">Project filter 1</div>
+                    <div class="bar-inner">Project filter 2</div>
                 </div>
-                <div class="w-30-h-100 bdr">
-                    Details project TEST
+            </figure>
+
+            <article id="web">
+                <div class="step" data-width="10%" data-index="0">
+                    <div class="step-content">
+                        <div>
+                            <img src="https://placehold.co/400x340" alt="Placeholder Image">
+                        </div>
+                        <div>
+                            <h3>Project title 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ct-h-100 flex">
-                <div class="h-min bdr">
-                    <img src="https://placehold.co/400x340">
+                <div class="step" data-width="90%" data-index="1">
+                    <div class="step-content">
+                        <div>
+                            <img src="https://placehold.co/400x340" alt="Placeholder Image">
+                        </div>
+                        <div>
+                            <h3>Project title 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-30-h-100 bdr">
-                    Details project 1
+                <div class="step" data-width="50%" data-index="2">
+                    <div class="step-content">
+                        <div>
+                            <img src="https://placehold.co/400x340" alt="Placeholder Image">
+                        </div>
+                        <div>
+                            <h3>Project title 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ct-h-100 flex">
-                <div class="h-min bdr">
-                    <img src="https://placehold.co/400x340">
-                </div>
-                <div class="w-50-h-100 bdr">
-                    Details project 1
-                </div>
-            </div>
-            <div class="ct-h-100 flex">
-                <div class="h-min bdr">
-                    <img src="https://placehold.co/400x340">
-                </div>
-                <div class="w-50-h-100 bdr">
-                    Details project 1
-                </div>
-            </div>
-            <div class="ct-h-100 flex">
-                <div class="h-min bdr">
-                    <img src="https://placehold.co/400x340">
-                </div>
-                <div class="w-50-h-100 bdr">
-                    Details project 1
-                </div>
-            </div>
-            <div class="ct-h-100 flex">
-                <div class="h-min bdr">
-                    <img src="https://placehold.co/400x340">
-                </div>
-                <div class="w-50-h-100 bdr">
-                    Details project 1
-                </div>
-            </div>
-            <div class="ct-h-100 flex">
-                <div class="h-min bdr">
-                    <img src="https://placehold.co/400x340">
-                </div>
-                <div class="w-50-h-100 bdr">
-                    Details project 1
-                </div>
-            </div>
+                <div class="step" data-width="50%" data-index="3">
+                    <div class="step-content">
+                        <div>
+                            <img src="https://placehold.co/400x340" alt="Placeholder Image">
+                        </div>
+                        <div>
+                            <h3>Project title 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                        </div>
+                    </div>
+            </article>
+            
         </div>
     </section>
 
+
+
+
+
     <section id="contact" class="layout">
         <ul class="contact-layout">
-            <li class="flex-start"><a href="" >Linkedin</a></li>
-            <li class="flex-start"><a href="" >Github</a></li>
+            <li class="flex-start"><a href="">Linkedin</a></li>
+            <li class="flex-start"><a href="">Github</a></li>
             <li class="flex-start"><a href="https://www.behance.net/habimanaleslie/">Behance</a></li>
             <li class="empty-column"></li>
-            <li class="flex-start"><a href="" >email</a></li>
+            <li class="flex-start"><a href="">email</a></li>
 
         </ul>
     </section>

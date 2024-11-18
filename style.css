@@ -3,9 +3,10 @@ body {
     margin: 0;
 }
 
-body, html {
-    scroll-padding-top: 55px; 
-  }
+body,
+html {
+    scroll-padding-top: 55px;
+}
 
 
 
@@ -18,18 +19,18 @@ body, html {
     width: 100%;
     height: 50px;
     z-index: 10;
-    padding: 0 7px ; 
+    padding: 0 7px;
     box-sizing: border-box;
 }
 
 .menu-layout {
-    display: flex; 
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 50px; 
-    align-items: center; 
-    justify-content: space-between; 
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu-layout .empty-column {
@@ -44,24 +45,24 @@ body, html {
 }
 
 .menu-layout li a {
-    text-decoration: none; 
-    color: #000; 
-    text-transform: uppercase; 
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
     font-weight: bold;
-   
+
 }
 
 .menu-layout li a:hover {
-    color: #007BFF; 
+    color: #007BFF;
 }
 
 
 .flex-start {
-    justify-content: flex-start; 
+    justify-content: flex-start;
 }
 
 .flex-end {
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 
@@ -93,7 +94,7 @@ body, html {
 }
 
 /* ➔➔➔➔ PRESENTATION  */
-#name-cta  {
+#name-cta {
     display: flex;
     flex-direction: column;
 }
@@ -115,14 +116,14 @@ body, html {
 }
 
 .margin-l {
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .margin-r {
-    margin-right: auto; 
+    margin-right: auto;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
@@ -144,7 +145,7 @@ body, html {
 
 
 /* ➔➔➔➔ SKILLS  */
-.row-center{
+.row-center {
     flex-direction: row;
     justify-content: center;
 }
@@ -169,60 +170,79 @@ body, html {
 
 
 
-/* ➔➔➔➔ PROJECTS  */
-/*  .row-center .layout .ct-h-2 .w-50-h-100  */
 
-#project-content {
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
 
-.f-dir-column {
-    flex-direction: column;
-    align-items: center;
-}
 
-.flex {
+/* ➔➔➔➔ PROJECTS SCROLL */
+#scrolly-side .scrolly {
     display: flex;
+    margin: 3rem auto;
+    padding: 1rem;
+    flex-direction: row !important;
 }
 
-
-#project-content img {
-    width: 100%;
-    height: auto;
-    min-width: 200px;
-    box-sizing: border-box;
-}
-
-.ct-h-100 {
-    border: 5px solid rgba(0, 251, 75, 0.445);
-    width: 100%;
-
-}
-
-.ct-h-100.flex {
-    display: flex;
-    gap: 20px;
-}
-
-.ct-h-100.flex>div {
+#scrolly-side .scrolly>* {
     flex: 1;
-    min-width: 200px;
-    max-width: 400px;
 }
 
+article {
+    padding-left: 1rem;
+}
 
+.step {
+    margin-bottom: 10% !important;
+    background-color: cyan;
+    transition: background-color 250ms ease-in-out;
+    display: flex; 
+    flex-direction: column; 
+}
 
-.w-30-h-100 {
-    width: 50%;
+.step:last-of-type {
+    margin-bottom: 0;
+}
+
+.step.is-active {
+    background-color: blue;
+}
+
+.step-content {
+    display: flex; 
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.step-content div {
+    flex: 1;
+}
+
+.step-content img {
+    width: 100%;
     height: auto;
+    object-fit: cover;
+    padding-right: 1rem;
 }
 
-.h-min {
-    width: 50%;
-    height: auto;
+.step p, h3, h5 {
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    max-width: 80%;
+    color: rgb(162, 2, 2);
+    margin-bottom: 15%;
 }
+
+figure.sticky {
+    position: sticky;
+    width: 100%;
+    height: 50vh;
+    background: green;
+    margin: 0;
+    top: 10vh;
+    left: 0;
+}
+
+
+
 
 
 
@@ -233,7 +253,7 @@ body, html {
     height: 50px;
     z-index: 10;
     box-sizing: border-box;
-    padding: 0 7px ; 
+    padding: 0 7px;
 
 }
 
@@ -244,13 +264,13 @@ body, html {
 
 
 .contact-layout {
-    display: flex; 
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 50px; 
-    align-items: center; 
-    justify-content: space-between; 
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contact-layout li {
@@ -259,18 +279,29 @@ body, html {
 }
 
 .contact-layout li a {
-    text-decoration: none; 
-    color: #000; 
-    text-transform: uppercase; 
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
     font-weight: bold;
-   
+
 }
 
 .contact-layout li a:hover {
-    color: #007BFF; 
+    color: #007BFF;
 }
 
 
+
+/* Responsive Adjustments */
+@media (max-width: 1230px) {
+    .step-content {
+        flex-direction: column;
+    }
+
+    .step-content img {
+        max-width: 100%;
+    }
+}
 
 
 @media (max-width: 995px) {
@@ -280,23 +311,24 @@ body, html {
         background-color: blue;
     }
 
-        /* Change layout to column for project content */
-        .ct-h-100.flex {
-            flex-direction: column;
-            gap: 5px;
-            margin-bottom: 100px;
-        }
-    
-        /* Adjust child divs for better alignment in column layout */
-        .ct-h-100.flex > div {
-            width: 100%; 
-            max-width: none; 
-            margin-bottom: 20px; /* CHECK IF NEEDED */
-        }
-    
-        .ct-h-100.flex > div:last-child {
-            margin-bottom: 0;
-        }
+    /* Change layout to column for project content */
+    .ct-h-100.flex {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 100px;
+    }
+
+    /* Adjust child divs for better alignment in column layout */
+    .ct-h-100.flex>div {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+        /* CHECK IF NEEDED */
+    }
+
+    .ct-h-100.flex>div:last-child {
+        margin-bottom: 0;
+    }
 
 
 }
@@ -304,16 +336,20 @@ body, html {
 /* Mobile-responsive Menu Adjustments */
 @media (max-width: 800px) {
     .menu-layout {
-        grid-template-columns: 1fr 1fr; /* Two-column layout for small screens */
-        justify-items: center; /* Center-align menu items */
+        grid-template-columns: 1fr 1fr;
+        /* Two-column layout for small screens */
+        justify-items: center;
+        /* Center-align menu items */
     }
 
     .menu-layout li {
-        margin-bottom: 10px; /* Add spacing between items */
+        margin-bottom: 10px;
+        /* Add spacing between items */
     }
 
     .empty-column {
-        display: none; /* Hide the empty column */
+        display: none;
+        /* Hide the empty column */
     }
 }
 
@@ -324,36 +360,41 @@ body, html {
     /* Ensure layout changes to column for the entire section */
     #presentation {
         display: flex;
-        flex-direction: column; /* Stack elements in a column */
+        flex-direction: column;
+        /* Stack elements in a column */
     }
 
     /* Adjust the layout of .ct-v-1, .ct-v-2, and others for smaller screens */
     .ct-v-1,
     .ct-v-2 {
-        height: auto; 
-        width: 100%; 
-        margin: 10px 0; 
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
     }
 
     /* Stack the items inside the .w-50 containers */
     .w-50 {
-        width: 100%; 
+        width: 100%;
     }
 
     /* Adjust the margin of the highlighted section if it has specific requirements */
     .margin-l {
-        margin-left: 0; /* Reset left margin */
+        margin-left: 0;
+        /* Reset left margin */
     }
 
     .margin-r {
-        margin-right: 0; /* Reset right margin */
+        margin-right: 0;
+        /* Reset right margin */
     }
 
     /* Optional: Ensure text is centered for smaller screens */
     .text-right {
-        text-align: center; /* Center the text in smaller screens */
+        text-align: center;
+        /* Center the text in smaller screens */
     }
 
 
 
 }
+
