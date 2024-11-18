@@ -194,8 +194,8 @@ article {
     margin-bottom: 10% !important;
     background-color: cyan;
     transition: background-color 250ms ease-in-out;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
 
 .step:last-of-type {
@@ -207,7 +207,7 @@ article {
 }
 
 .step-content {
-    display: flex; 
+    display: flex;
     gap: 1rem;
     align-items: flex-start;
 }
@@ -223,7 +223,8 @@ article {
     padding-right: 1rem;
 }
 
-.step p, h3 {
+.step p,
+h3 {
     margin: 0;
     text-align: left;
     font-weight: 400;
@@ -368,15 +369,14 @@ figure.sticky {
 
 /* Media query to switch to column layout at 799px or below */
 @media (max-width: 799px) {
-
-    /* Ensure layout changes to column for the entire section */
+    
+    /* ➔➔➔➔ PRESENTATION  */
     #presentation {
         display: flex;
         flex-direction: column;
         /* Stack elements in a column */
     }
 
-    /* Adjust the layout of .ct-v-1, .ct-v-2, and others for smaller screens */
     .ct-v-1,
     .ct-v-2 {
         height: auto;
@@ -384,12 +384,10 @@ figure.sticky {
         margin: 10px 0;
     }
 
-    /* Stack the items inside the .w-50 containers */
     .w-50 {
         width: 100%;
     }
 
-    /* Adjust the margin of the highlighted section if it has specific requirements */
     .margin-l {
         margin-left: 0;
         /* Reset left margin */
@@ -400,13 +398,29 @@ figure.sticky {
         /* Reset right margin */
     }
 
-    /* Optional: Ensure text is centered for smaller screens */
     .text-right {
         text-align: center;
-        /* Center the text in smaller screens */
+    }
+
+    /* ➔➔➔➔ SKILLS  */
+    .row-center {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .w-50-h-100 {
+        width: auto;
+        height: auto;
+    }
+
+    .ct-h-2 {
+        border: 5px solid rgba(71, 58, 255, 0.445);
+        width: 70%;
+        height: auto;
+        margin-left: auto;
     }
 
 
 
-}
 
+}
