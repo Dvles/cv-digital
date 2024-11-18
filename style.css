@@ -101,6 +101,7 @@ html {
 
 #name-cta p {
     position: fixed;
+    z-index: 10;
 }
 
 .ct-v-1 {
@@ -222,13 +223,21 @@ article {
     padding-right: 1rem;
 }
 
-.step p, h3, h5 {
+.step p, h3 {
     margin: 0;
     text-align: left;
     font-weight: 400;
     max-width: 80%;
     color: rgb(162, 2, 2);
-    margin-bottom: 15%;
+    margin-bottom: 2%;
+}
+
+.step h5 {
+    font-weight: 400;
+    max-width: 80%;
+    color: rgb(162, 2, 2);
+    margin-bottom: 5%;
+    padding-top: 5%;
 }
 
 figure.sticky {
