@@ -346,6 +346,32 @@ figure.sticky {
 
 }
 
+
+@media (max-width: 932px) {
+
+
+    /* ➔➔➔➔ BIO  */
+    #bio {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #education,
+    #experience {
+        margin: 0 5px;
+    }
+
+    .ct-h-1 {
+        width: 40%;
+        height: 100%;
+    }
+
+
+
+}
+
+
+
 /* Mobile-responsive Menu Adjustments */
 @media (max-width: 800px) {
     .menu-layout {
@@ -365,10 +391,6 @@ figure.sticky {
         /* Hide the empty column */
     }
 
-    /* ➔➔➔➔ BIO  */
-    .ct-h-1 {
-        width: 30%;
-    }
 
     /* ➔➔➔➔ PRESENTATION  */
     #presentation {
@@ -487,6 +509,25 @@ figure.sticky {
 @media (max-width: 690px) {
 
 
+    /* ➔➔➔➔ BIO  */
+    #bio {
+        flex-direction: column;
+        justify-content:center !important;
+    }
+
+    #education,
+    #experience {
+        margin: 5px 5px;
+    }
+
+    .ct-h-1 {
+        width: 80%;
+        height: 100%;
+    }
+
+
+
+
 
 
     /* ➔➔➔➔ PROJECTS SCROLL */
@@ -569,7 +610,6 @@ figure.sticky {
     .hidden {
         display: none;
     }
-
 
 
 
