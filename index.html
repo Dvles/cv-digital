@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Resume</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/enter-view@2.0.1/enter-view.min.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -77,71 +79,88 @@
         <div class="scrolly">
             <figure class="sticky">
                 <div class="bar-outer text-right">
-                    <div class="bar-inner">Project filter 1</div>
-                    <div class="bar-inner">Project filter 2</div>
+                    <div class="bar-inner web-filter">Web projects</div>
+                    <div class="bar-inner gfx-filter">Gfx projects</div>
                 </div>
             </figure>
 
-            <article id="web">
-                <div class="step" data-width="10%" data-index="0">
+            <article>
+                <div class="step web" data-width="10%" data-index="0">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
                         </div>
                         <div>
-                            <h3>Project title 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                            <h3>Web project 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <h5>Tech1 Tech2 Tech3</h5>
                         </div>
                     </div>
                 </div>
-                <div class="step" data-width="90%" data-index="1">
+                <div class="step web" data-width="90%" data-index="1">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
                         </div>
                         <div>
-                            <h3>Project title 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                            <h3>Web project  2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <h5>Tech1 Tech2 Tech3</h5>
                         </div>
                     </div>
                 </div>
-                <div class="step" data-width="50%" data-index="2">
+                <div class="step web" data-width="90%" data-index="2">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
                         </div>
                         <div>
-                            <h3>Project title 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                            <h3>Web project  3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <h5>Tech1 Tech2 Tech3</h5>
                         </div>
                     </div>
                 </div>
-                <div class="step" data-width="50%" data-index="3">
+                <div class="step gfx hidden" data-width="50%" data-index="3">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
                         </div>
                         <div>
-                            <h3>Project title 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-                            <h5>Tech1 Tech2 Tech3 Tech4</h5>
+                            <h3>GFX project 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <h5>Tech1 Tech2 Tech3</h5>
                         </div>
                     </div>
+                </div>
+                <div class="step gfx hidden" data-width="50%" data-index="4">
+                    <div class="step-content">
+                        <div>
+                            <img src="https://placehold.co/400x340" alt="Placeholder Image">
+                        </div>
+                        <div>
+                            <h3>GFX project 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <h5>Tech1 Tech2 Tech3</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="step gfx hidden" data-width="50%" data-index="5">
+                    <div class="step-content">
+                        <div>
+                            <img src="https://placehold.co/400x340" alt="Placeholder Image">
+                        </div>
+                        <div>
+                            <h3>GFX project 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <h5>Tech1 Tech2 Tech3</h5>
+                        </div>
+                    </div>
+                </div>
             </article>
-            
         </div>
     </section>
+
 
 
 

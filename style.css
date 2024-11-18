@@ -244,12 +244,15 @@ figure.sticky {
     position: sticky;
     width: 100%;
     height: 50vh;
-    background: green;
+    background: rgb(193, 255, 193);
     margin: 0;
     top: 10vh;
     left: 0;
 }
 
+.hidden {
+    display: none;
+}
 
 
 
