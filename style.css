@@ -282,6 +282,16 @@ figure.sticky {
 
 /* ➔➔➔ CONTACT */
 
+.c-layout {
+    border: 5px solid rgb(152, 213, 253);
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    box-sizing: border-box;
+    background-color: rgb(236, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
 #contact {
     display: flex;
     justify-content: flex-end;
@@ -291,6 +301,8 @@ figure.sticky {
 
 .internship-cta {
 max-width: 50%;
+/* Teach me how to prevent this DIY hack */
+margin-bottom: -80px;
 }
 
 
@@ -307,9 +319,10 @@ max-width: 50%;
 /* ➔➔➔➔ FOOTER */
 
 footer {
-    margin-top: 2%;
+    margin: 2% 1%;
     position: sticky; /* Sticky positioning */
     bottom: 0; /* Stick it to the bottom of the viewport */
+
 }
 
 .contact-layout {
