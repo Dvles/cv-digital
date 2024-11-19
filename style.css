@@ -588,6 +588,7 @@ figure.sticky {
     display: flex;
     gap: 1rem;
     align-items: center !important;
+    padding: 1em;;
 }
 
 .step-content div {
@@ -602,7 +603,6 @@ figure.sticky {
 }
 
 .p-description {
-    width: 80%;
 }
 
 .step p,
@@ -616,6 +616,7 @@ h3 {
 }
 
 .step h5 {
+    text-align: left;
     font-weight: 400;
     max-width: 80%;
     color: rgb(162, 2, 2);
