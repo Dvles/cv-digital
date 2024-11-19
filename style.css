@@ -14,7 +14,7 @@ html {
 
 
 
-/* ➔➔➔➔ MENU  */
+/* ➔➔➔ MENU avec CSS GRID */
 .menu {
     border: 5px solid rgba(255, 0, 212, 0.404);
     position: fixed;
@@ -28,37 +28,47 @@ html {
 }
 
 .menu-layout {
-    display: flex;
-    list-style: none;
+    display: grid; /* Utilisation de grid pour organiser les éléments du menu */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 colonnes */
+    gap: 0;
     margin: 0;
     padding: 0;
     height: 50px;
     align-items: center;
-    justify-content: space-between;
 }
 
-.menu-layout .empty-column {
-    pointer-events: none;
-    visibility: hidden;
-}
-
-
-.menu-layout li {
+.menu-item-start {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
-.menu-layout li a {
+.menu-item-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-item a {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
     font-weight: bold;
-
 }
 
-.menu-layout li a:hover {
+.menu-item a:hover {
     color: #007BFF;
 }
+
+.menu-item.empty-column {
+    visibility: hidden; /* L'élément vide n'affiche rien, mais conserve sa place */
+}
+
+.m-contact, .lang {
+    text-align: left;
+}
+
+
 
 
 .flex-start {
@@ -268,27 +278,26 @@ figure.sticky {
 
 
 
-/* ➔➔➔➔ CONTACT  */
-
+/* ➔➔➔ CONTACT */
 
 #contact {
     display: flex;
     justify-content: flex-end;
-
 }
 
-.internship-cta  {
-    margin-left: 83%;
+
+.internship-cta {
+margin-left: 50%;
 }
 
-.c-download {
-    margin-left: 83%;
-}
 
-.tagline{
-    text-align: right;
+
+.tagline {
     font-size: 50px;
+    text-align: right;
 }
+
+
 
 
 /* ➔➔➔➔ FOOTER */
