@@ -463,7 +463,10 @@ figure.sticky {
         /* Stack elements in a column */
     }
 
-    .ct-v-1,
+    .ct-v-1 {
+        height: 24%;
+    }
+    
     .ct-v-2 {
         height: auto;
         width: 100%;
