@@ -80,6 +80,8 @@ html {
 }
 
 
+
+
 /* ➔➔➔➔ MAIN CONTENT ➔➔➔➔ */
 .layout {
     border: 5px solid rgb(152, 213, 253);
@@ -283,18 +285,20 @@ figure.sticky {
 #contact {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
 .internship-cta {
-margin-left: 50%;
+max-width: 50%;
 }
 
 
 
-.tagline {
-    font-size: 50px;
+.tagline h1 {
+    font-size: 100px;
     text-align: right;
+    line-height: 1;
 }
 
 
@@ -302,57 +306,41 @@ margin-left: 50%;
 
 /* ➔➔➔➔ FOOTER */
 
-
 footer {
-    position: fixed; /* Fixes the footer to the bottom of the viewport */
-    bottom: 0; /* Anchors the footer at the bottom */
-    left: 0;
-    width: 100%; /* Makes the footer span the entire viewport width */
-    height: 50px; /* Matches the menu's height */
-    z-index: 10; /* Ensures the footer is above other elements */
-    padding: 0 7px; /* Matches the menu's padding */
-    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+    margin-top: 2%;
+    position: sticky; /* Sticky positioning */
+    bottom: 0; /* Stick it to the bottom of the viewport */
 }
 
 .contact-layout {
-    display: flex; /* Makes the footer links align horizontally */
-    list-style: none; /* Removes default list styling */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 columns */
+    gap: 20px; /* Add spacing between columns */
     margin: 0;
     padding: 0;
-    height: 50px; /* Ensures consistent height with the footer */
-    align-items: center; /* Vertically centers content */
-    justify-content: space-between; /* Distributes items evenly, like the menu */
-}
-
-.contact-layout .empty-column {
-    pointer-events: none; /* Disables interaction */
-    visibility: hidden; /* Hides the element while preserving spacing */
-}
-
-.contact-layout li {
-    display: flex;
-    align-items: center; /* Vertically aligns text and icons */
-}
-
-.contact-layout li a {
-    text-decoration: none; /* Removes underlines */
-    color: #000; /* Default text color */
-    text-transform: uppercase; /* Matches the menu's styling */
-    font-weight: bold; /* Matches the menu's font weight */
-}
-
-.contact-layout li a:hover {
-    color: #007BFF; /* Matches the menu's hover effect */
+    list-style: none; /* Remove list style */
 }
 
 .flex-start {
-    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
 }
 
-.flex-end {
-    justify-content: flex-end;
+.contact-layout a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
+.contact-layout a:hover {
+    color: #007BFF;
+}
+
+/* Empty column for spacing */
+.contact-layout .empty-column {
+    visibility: hidden; /* Empty column will not display anything but keeps space */
+}
 
 
 
