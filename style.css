@@ -264,49 +264,62 @@ figure.sticky {
 
 
 
-/* ➔➔➔➔ FOOTER/CONTACT  */
-.contact {
-    border: 5px solid rgba(255, 0, 212, 0.404);
-    width: 100%;
-    height: 50px;
-    z-index: 10;
-    box-sizing: border-box;
-    padding: 0 7px;
+/* ➔➔➔➔ CONTACT  */
 
+/* ➔➔➔➔ FOOTER */
+
+
+footer {
+    position: fixed; /* Fixes the footer to the bottom of the viewport */
+    bottom: 0; /* Anchors the footer at the bottom */
+    left: 0;
+    width: 100%; /* Makes the footer span the entire viewport width */
+    height: 50px; /* Matches the menu's height */
+    z-index: 10; /* Ensures the footer is above other elements */
+    padding: 0 7px; /* Matches the menu's padding */
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+}
+
+.contact-layout {
+    display: flex; /* Makes the footer links align horizontally */
+    list-style: none; /* Removes default list styling */
+    margin: 0;
+    padding: 0;
+    height: 50px; /* Ensures consistent height with the footer */
+    align-items: center; /* Vertically centers content */
+    justify-content: space-between; /* Distributes items evenly, like the menu */
 }
 
 .contact-layout .empty-column {
-    pointer-events: none;
-    visibility: hidden;
-}
-
-
-.contact-layout {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
+    pointer-events: none; /* Disables interaction */
+    visibility: hidden; /* Hides the element while preserving spacing */
 }
 
 .contact-layout li {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically aligns text and icons */
 }
 
 .contact-layout li a {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    font-weight: bold;
-
+    text-decoration: none; /* Removes underlines */
+    color: #000; /* Default text color */
+    text-transform: uppercase; /* Matches the menu's styling */
+    font-weight: bold; /* Matches the menu's font weight */
 }
 
 .contact-layout li a:hover {
-    color: #007BFF;
+    color: #007BFF; /* Matches the menu's hover effect */
 }
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+
 
 
 /* ➔➔➔➔ (RA) RESPONSIVE ADJUSTMENTS ➔➔➔➔ */
@@ -643,7 +656,6 @@ figure.sticky {
         padding-right: 1rem;
     }
 
-    .p-description {}
 
     .step p,
     h3 {
