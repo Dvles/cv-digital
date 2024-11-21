@@ -134,8 +134,18 @@
 
     <section id="skills" class="layout row-center">
         <div id="skills-details" class="flex w-50-h-100">
-            <div id="filt" class="ct-h-2">
-                Filter details
+            <div id="filter-original" class="ct-h-2 origial filter-detail">
+                Filter details ORIGINAL ORIGINAL ORIGINAL, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
+            </div>
+            <div id="filter-domain" class="ct-h-2 domain hidden filter-detail">
+                Filter details DOMAIN DOMAIN adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
+            </div>
+
+            <div id="filter-name" class="ct-h-2 name hidden filter-detail">
+                Filter details NAME NAME NAME, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
+            </div>
+            <div id="filter-level" class="ct-h-2 domain hidden filter-detail">
+                Filter details LEVEL LEVEL VEL, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
             </div>
         </div>
         <div id="skills-isotope" class="flex w-50-h-100">
@@ -150,10 +160,10 @@
                 <!-- Sorting options -->
 
                 <div id="sorts" class="button-group">
-                    <button class="button is-checked" data-sort-value="original-order">Original Order</button>
-                    <button class="button" data-sort-value="name">Name</button>
-                    <button class="button" data-sort-value="domain">Domain</button>
-                    <button class="button" data-sort-value="level">Level</button>
+                    <button class="button is-checked btn-original-filter" data-sort-value="original-order">Original Order</button>
+                    <button class="button btn-name-filter" data-sort-value="name">Name</button>
+                    <button class="button btn-domain-filter" data-sort-value="domain">Domain</button>
+                    <button class="button btn-level-filter" data-sort-value="level">Level</button>
                 </div>
 
                 <ul class="table-like">
@@ -318,13 +328,13 @@
         <div id="my_projects" class="scrolly">
             <figure class="sticky">
                 <div class="bar-outer text-right">
-                    <div class="bar-inner web-filter">Web projects</div>
-                    <div class="bar-inner gfx-filter">Gfx projects</div>
+                    <div class="bar-inner web-filter">Web Projects</div>
+                    <div class="bar-inner gfx-filter">GFX Projects</div>
                 </div>
             </figure>
 
             <article>
-                <div class="step web" data-width="10%" data-index="0">
+                <div class="step web" data-category="p-web" data-index="0">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
@@ -337,7 +347,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step web" data-width="90%" data-index="1">
+                <div class="step web" data-category="p-web" data-index="1">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
@@ -350,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step web" data-width="90%" data-index="2">
+                <div class="step web" data-category="p-web" data-index="2">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
@@ -363,7 +373,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step gfx hidden" data-width="50%" data-index="3">
+                <div class="step gfx hidden" data-category="gfx" data-index="3">
                     <div class="step-content">
                         <div>
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
@@ -376,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step gfx hidden" data-width="50%" data-index="4">
+                <div class="step gfx hidden" data-category="gfx" data-index="4">
                     <div class="step-content">
                         <div class="p-description">
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">
@@ -389,7 +399,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="step gfx hidden" data-width="50%" data-index="5">
+                <div class="step gfx hidden" data-category="gfx" data-index="5">
                     <div class="step-content">
                         <div class="p-description">
                             <img src="https://placehold.co/400x340" alt="Placeholder Image">

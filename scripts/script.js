@@ -1,3 +1,33 @@
+// ➔➔ PROJECT FILTER TOGGLE - Separate from Isotope, specific for project steps
+document.addEventListener("DOMContentLoaded", () => {
+    const webFilter = document.querySelector(".web-filter");
+    const gfxFilter = document.querySelector(".gfx-filter");
+    const allSteps = document.querySelectorAll(".step");
+
+    // Web filter logic - only show steps with 'web' class
+    webFilter.addEventListener("click", () => {
+        allSteps.forEach(step => {
+            if (step.classList.contains("web")) {
+                step.classList.remove("hidden");
+            } else {
+                step.classList.add("hidden");
+            }
+        });
+    });
+
+    // Gfx filter logic - only show steps with 'gfx' class
+    gfxFilter.addEventListener("click", () => {
+        allSteps.forEach(step => {
+            if (step.classList.contains("gfx")) {
+                step.classList.remove("hidden");
+            } else {
+                step.classList.add("hidden");
+            }
+        });
+    });
+});
+
+
 // ➔➔ ISOTOPE.JS 
 // external js: isotope.pkgd.js
 
@@ -96,8 +126,6 @@
 })();
 
 
-
-
 // ➔➔ SCROLL BASED BEHAVIOUR  
 console.log(d3.version);
 const container = d3.select('#scrolly-side');
@@ -127,31 +155,3 @@ function init() {
 init(); // Initialize the behavior
 
 
-// ➔➔ PROJECT FILTER TOGGLE 
-document.addEventListener("DOMContentLoaded", () => {
-    const webFilter = document.querySelector(".web-filter");
-    const gfxFilter = document.querySelector(".gfx-filter");
-    const allSteps = document.querySelectorAll(".step");
-
-    console.log(webFilter);
-
-    webFilter.addEventListener("click", () => {
-        allSteps.forEach(step => {
-            if (step.classList.contains("web")) {
-                step.classList.remove("hidden");
-            } else {
-                step.classList.add("hidden");
-            }
-        });
-    });
-
-    gfxFilter.addEventListener("click", () => {
-        allSteps.forEach(step => {
-            if (step.classList.contains("gfx")) {
-                step.classList.remove("hidden");
-            } else {
-                step.classList.add("hidden");
-            }
-        });
-    });
-});
