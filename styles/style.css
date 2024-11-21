@@ -282,6 +282,15 @@ figure.sticky {
     display: none;
 }
 
+.active-filter{
+    font-weight: bold;
+}
+
+.unactive-filter{
+    opacity: 0.8;
+}
+
+
 
 
 

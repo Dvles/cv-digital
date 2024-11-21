@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const webFilter = document.querySelector(".web-filter");
     const gfxFilter = document.querySelector(".gfx-filter");
     const allSteps = document.querySelectorAll(".step");
+
     // Web filter logic - only show steps with 'web' class
     webFilter.addEventListener("click", () => {
         allSteps.forEach(step => {
@@ -62,7 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 step.classList.add("hidden");
             }
         });
+
+        // Update filter button styles
+        webFilter.classList.add("active-filter");
+        webFilter.classList.remove("unactive-filter");
+        gfxFilter.classList.add("unactive-filter");
+        gfxFilter.classList.remove("active-filter");
     });
+
     // Gfx filter logic - only show steps with 'gfx' class
     gfxFilter.addEventListener("click", () => {
         allSteps.forEach(step => {
@@ -72,6 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 step.classList.add("hidden");
             }
         });
+
+        // Update filter button styles
+        gfxFilter.classList.add("active-filter");
+        gfxFilter.classList.remove("unactive-filter");
+        webFilter.classList.add("unactive-filter");
+        webFilter.classList.remove("active-filter");
     });
 });
 
