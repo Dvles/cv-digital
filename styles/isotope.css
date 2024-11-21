@@ -91,8 +91,17 @@ body { font-family: sans-serif; }
   margin-right: 15px;
 }
 
-/* Hide elements while keeping them part of the layout for Isotope recalculation */
 .hidden-js {
-  visibility: hidden;
-  display: none;
+  opacity: 0;
+  pointer-events: none; /* Disable interaction with hidden elements */
+  height: 0; /* Collapse space for hidden elements */
+  overflow: hidden; /* Ensure no visual spillover */
+  transition: opacity 0.3s, height 0.3s;
+}
+
+.visible-js {
+  opacity: 1;
+  pointer-events: auto;
+  height: auto; /* Expand space for visible elements */
+  transition: opacity 0.3s, height 0.3s;
 }
