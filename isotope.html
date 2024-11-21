@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isotope Filter Example</title>
+  <link rel="stylesheet" href="./styles/isotope.css">
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Isotope JavaScript library -->
+  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Isotope - test</h1>
+
+
+  <!-- Filter options -->
+
+  <div id="filters" class="checkbox-group">
+    <label><input type="checkbox" value="web" checked> Web</label>
+    <label><input type="checkbox" value="graphics" checked> Graphics</label>
+  </div>
+
+  <!-- Sorting options -->
+
+  <div id="sorts" class="button-group">
+    <button class="button is-checked" data-sort-value="original-order">Original Order</button>
+    <button class="button" data-sort-value="name">Name</button>
+    <button class="button" data-sort-value="domain">Domain</button>
+    <button class="button" data-sort-value="level">Level</button>
+  </div>
+
+  <ul class="table-like">
+    <!-- Programming Languages -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">JavaScript</div>
+      <div class="domain">frontend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">PHP 5</div>
+      <div class="domain">backend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">Python</div>
+      <div class="domain">backend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">C#</div>
+      <div class="domain">backend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">SQL</div>
+      <div class="domain">database</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- Web Technologies -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">HTML5</div>
+      <div class="domain">frontend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">CSS3</div>
+      <div class="domain">frontend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">AJAX</div>
+      <div class="domain">frontend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">JSON</div>
+      <div class="domain">backend</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- Frameworks -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">React</div>
+      <div class="domain">framework</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">Bootstrap</div>
+      <div class="domain">framework</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">Symfony</div>
+      <div class="domain">framework</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- CMS -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">WordPress</div>
+      <div class="domain">CMS</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- Tools -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">GitHub</div>
+      <div class="domain">version-control</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">Visual Studio Code</div>
+      <div class="domain">IDE</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">Visual Studio</div>
+      <div class="domain">IDE</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- Databases -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">MySQL</div>
+      <div class="domain">database</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">phpMyAdmin</div>
+      <div class="domain">database</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- Methodologies -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">SCRUM</div>
+      <div class="domain">gestion</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- Web Servers -->
+    <li class="table-like__item" data-category="web">
+      <div class="name">Apache</div>
+      <div class="domain">servers</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="web">
+      <div class="name">IIS</div>
+      <div class="domain">servers</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- GRAPHIC DESIGN Skills -->
+    <!-- Summary for Graphics -->
+    <li class="table-like__item" data-category="graphics" data-display-group="graphics-summary">
+      <div class="name">Adobe Creative Suite</div>
+      <div class="domain">print/digital</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+    <!-- Detailed Graphic Design Skills -->
+    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+      <div class="name">Photoshop</div>
+      <div class="domain">print/digital</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+      <div class="name">Illustrator</div>
+      <div class="domain">print/digital</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+      <div class="name">InDesign</div>
+      <div class="domain">print</div>
+      <div class="level">intermédiaire</div>
+    </li>
+    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+      <div class="name">After Effects</div>
+      <div class="domain">digital</div>
+      <div class="level">intermédiaire</div>
+    </li>
+
+
+
+
+
+    <!-- Isotope JavaScript library -->
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom script -->
+    <script src="./scripts/isotope.js"></script>
+</body>
+
+</html>
