@@ -1,4 +1,54 @@
-// ➔➔ PROJECT FILTER TOGGLE - Separate from Isotope, specific for project steps
+// ➔➔ Skills detail FILTER TOGGLE
+document.addEventListener("DOMContentLoaded", () => {
+    // Select the filter detail elements
+    const filterOriginal = document.querySelector("#filter-original");
+    const filterDomain = document.querySelector("#filter-domain");
+    const filterName = document.querySelector("#filter-name");
+    const filterLevel = document.querySelector("#filter-level");
+  
+    // Select all filter detail containers
+    const allFilterDetails = document.querySelectorAll(".filter-detail");
+  
+    // Select the filter buttons
+    const btnNameFilter = document.querySelector(".btn-name-filter");
+    const btnLevelFilter = document.querySelector(".btn-level-filter");
+    const btnDomainFilter = document.querySelector(".btn-domain-filter");
+    const btnOriginalFilter = document.querySelector(".btn-original-filter");
+  
+    // Function to hide all filter details
+    function hideAllFilterDetails() {
+      allFilterDetails.forEach(filterDetail => {
+        filterDetail.classList.add("hidden"); // Hide all filter details
+      });
+    }
+  
+    // Button event listener for "Original"
+    btnOriginalFilter.addEventListener("click", () => {
+      hideAllFilterDetails(); // Hide all filter details
+      filterOriginal.classList.remove("hidden"); // Show original filter details
+    });
+  
+    // Button event listener for "Name"
+    btnNameFilter.addEventListener("click", () => {
+      hideAllFilterDetails(); // Hide all filter details
+      filterName.classList.remove("hidden"); // Show name filter details
+    });
+  
+    // Button event listener for "Domain"
+    btnDomainFilter.addEventListener("click", () => {
+      hideAllFilterDetails(); // Hide all filter details
+      filterDomain.classList.remove("hidden"); // Show domain filter details
+    });
+  
+    // Button event listener for "Level"
+    btnLevelFilter.addEventListener("click", () => {
+      hideAllFilterDetails(); // Hide all filter details
+      filterLevel.classList.remove("hidden"); // Show level filter details
+    });
+  });
+
+
+// ➔➔ PROJECT FILTER TOGGLE 
 document.addEventListener("DOMContentLoaded", () => {
     const webFilter = document.querySelector(".web-filter");
     const gfxFilter = document.querySelector(".gfx-filter");
@@ -24,6 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+
+
+
 // ➔➔ ISOTOPE.JS 
 // external js: isotope.pkgd.js
 (function() {
