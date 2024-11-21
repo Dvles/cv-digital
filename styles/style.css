@@ -75,7 +75,7 @@ html {
 
 
 
-/* ➔➔➔➔ MAIN CONTENT ➔➔➔➔ */
+/* ➔➔➔➔ MAIN CONTENT - KEY MARGINS➔➔➔➔ */
 .layout {
     border: 5px solid rgb(152, 213, 253);
     height: auto;
@@ -96,6 +96,11 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+#scrolly-side{
+    margin-top: 200px !important;
+}
+
 
 /* Containers inside .layout */
 .ct-v-1,
