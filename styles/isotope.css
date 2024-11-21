@@ -105,3 +105,18 @@ body { font-family: sans-serif; }
   height: auto; /* Expand space for visible elements */
   transition: opacity 0.3s, height 0.3s;
 }
+
+@media (max-width: 1435px) {
+  .table-like__item .name { 
+    width: 45%; 
+    min-width: 180px;
+  }
+  .table-like__item .domain { 
+    width: 30%; 
+    min-width: 65px;
+  }
+  .table-like__item .level { 
+    width: 20%; 
+    max-width: 20px;
+  }
+}
