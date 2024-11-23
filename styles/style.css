@@ -79,7 +79,7 @@ html {
 .layout {
     border: 5px solid rgb(152, 213, 253);
     height: auto;
-    min-height: calc(100vh - 50px); 
+    min-height: calc(100vh - 50px);
     margin-top: 200px;
     box-sizing: border-box;
     background-color: rgb(236, 255, 255);
@@ -89,7 +89,7 @@ html {
 
 .layout-p {
     border: 5px solid rgb(152, 213, 253);
-    height: calc(100vh - 50px); 
+    height: calc(100vh - 50px);
     margin-top: 50px;
     box-sizing: border-box;
     background-color: rgb(236, 255, 255);
@@ -97,7 +97,7 @@ html {
     flex-direction: column;
 }
 
-#scrolly-side{
+#scrolly-side {
     margin-top: 200px !important;
 }
 
@@ -176,6 +176,33 @@ html {
     height: 100%;
 }
 
+/* Initial hidden state with zero opacity and no height */
+.bio-content.extra-experience {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+  
+  /* Visible state with full opacity and auto height */
+  .bio-content.extra-experience.visible {
+    opacity: 1;
+    max-height: 500px; /* Adjust this value based on your content */
+  }
+  
+
+
+
+  #see-more, #see-less {
+    opacity: 1;
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+
+  #see-more.hidden, #see-less.hidden {
+    opacity: 0;
+    visibility: hidden; /* Prevents interaction while invisible */
+  }
 
 /* ➔➔➔➔ SKILLS  */
 .row-center {
@@ -287,11 +314,11 @@ figure.sticky {
     display: none;
 }
 
-.active-filter{
+.active-filter {
     font-weight: bold;
 }
 
-.unactive-filter{
+.unactive-filter {
     opacity: 0.8;
 }
 
