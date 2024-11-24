@@ -70,7 +70,9 @@ html {
     text-align: left;
 }
 
-
+li.menu-item-end.m-projects  a{
+    margin-right: 10px !important;
+}
 
 
 
