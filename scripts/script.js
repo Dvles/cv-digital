@@ -6,6 +6,9 @@ console.info("AVAILABLE: FROM XX to XX");
 
 
 
+
+
+
 // ➔➔ PRESENTATION SCROLL-SPEED
 const aboutText = document.getElementById('about-text');
 const highlights = document.getElementById('highlights');

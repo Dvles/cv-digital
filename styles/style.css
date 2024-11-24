@@ -147,12 +147,28 @@ li.menu-item-end.m-projects a {
     display: flex;
     flex-direction: column;
     font-size: 73px;
-}
-
-#name-cta h1 {
     position: fixed;
     z-index: 10;
+    
 }
+
+#name-cta h1 a {
+text-decoration: none;
+color: #00000052;
+
+}
+
+#name-cta h1 a:hover {
+    text-decoration: underline;
+    color: #00000052;
+    
+}
+
+#name-cta h1 a:active {
+    color: #000000 !important; 
+}
+
+
 
 .ct-v-1 {
     height: 24%;
