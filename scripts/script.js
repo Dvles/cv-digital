@@ -1,3 +1,23 @@
+// ➔➔ PRESENTATION SCROLL-SPEED
+const aboutText = document.getElementById('about-text');
+const highlights = document.getElementById('highlights');
+
+// Scroll event listener
+window.addEventListener('scroll', () => {
+    // Get the current scroll position
+    let scrollPosition = window.scrollY;
+
+    // Adjust scroll speed for about-text (slower)
+    let aboutTextSpeed = scrollPosition * 0.4;  // You can adjust this value (slower = smaller multiplier)
+    aboutText.style.transform = `translateY(${aboutTextSpeed}px)`;
+
+    // Adjust scroll speed for highlights (faster)
+    let highlightsSpeed = scrollPosition * 0.2;  // You can adjust this value (faster = larger multiplier)
+    highlights.style.transform = `translateY(${highlightsSpeed}px)`;
+});
+
+
+
 // ➔➔ EXPERIENCE "See more" TOGGLE
 document.addEventListener("DOMContentLoaded", () => {
   const btnSeeMore = document.querySelector("#see-more");
