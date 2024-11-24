@@ -281,7 +281,7 @@ article {
 
 .step {
     margin-bottom: 10% !important;
-    background-color: cyan;
+    background-color: rgba(0, 255, 255, 0.021);
     transition: background-color 250ms ease-in-out;
     display: flex;
     flex-direction: column;
@@ -292,7 +292,7 @@ article {
 }
 
 .step.is-active {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.111);
 }
 
 .step-content {
