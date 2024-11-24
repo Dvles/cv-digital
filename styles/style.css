@@ -70,16 +70,17 @@ html {
     justify-content: flex-end;
 }
 
-.menu-item a {
+.menu-item-start a, .menu-item-end a {
     text-decoration: none;
     color: #000;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
-.menu-item a:hover {
+.menu-item-start a:hover, .menu-item-end a:hover {
     color: #007BFF;
 }
+
+
 
 .menu-item.empty-column {
     visibility: hidden;
