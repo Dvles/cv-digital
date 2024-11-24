@@ -374,6 +374,8 @@ color: #00000052;
     flex: 1;
 }
 
+
+
 article {
     padding-left: 1rem;
 }
@@ -415,10 +417,22 @@ article {
 h3 {
     margin: 0;
     text-align: left;
-    font-weight: 400;
     max-width: 80%;
     margin-bottom: 2%;
 }
+
+.step h3 {
+    font-weight: bold;
+
+}
+
+.step p{
+
+    font-weight: 400;
+
+}
+
+
 
 .step h5 {
     font-weight: 400;
@@ -443,11 +457,22 @@ figure.sticky {
 
 .active-filter {
     font-weight: bold;
+    font-size: 30px;
 }
 
 .unactive-filter {
-    opacity: 0.8;
+    opacity: 0.4;
+    font-size: 30px;
+    font-weight: bold;
 }
+
+.unactive-filter:hover {
+    opacity: 0.8;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
 
 
 
