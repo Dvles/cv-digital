@@ -183,26 +183,50 @@ html {
     overflow: hidden;
     transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
-  
-  /* Visible state with full opacity and auto height */
-  .bio-content.extra-experience.visible {
+
+/* Visible state with full opacity and auto height */
+.bio-content.extra-experience.visible {
     opacity: 1;
-    max-height: 500px; /* Adjust this value based on your content */
-  }
-  
+    max-height: 500px;
+    /* Adjust this value based on your content */
+}
 
 
-
-  #see-more, #see-less {
+#see-more,
+#see-less {
     opacity: 1;
     transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-  }
+}
 
 
-  #see-more.hidden, #see-less.hidden {
+#see-more.hidden,
+#see-less.hidden {
     opacity: 0;
-    visibility: hidden; /* Prevents interaction while invisible */
-  }
+    visibility: hidden;
+    /* Prevents interaction while invisible */
+}
+
+
+/* Initial hidden state for the extra content */
+.bio-content .extra-content {
+    display: none;
+    text-align: right;
+    margin-left: 60px;;
+    margin-bottom: 60px;
+    opacity: 0;
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth transition */
+}
+
+/* Show extra content when hovering over the experience item */
+.bio-content:hover .extra-content {
+    display: block;
+    /* Show the extra content */
+    opacity: 1;
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth fade-in effect */
+}
+
 
 /* ➔➔➔➔ SKILLS  */
 .row-center {

@@ -18,7 +18,27 @@ window.addEventListener('scroll', () => {
 
 
 
-// ➔➔ EXPERIENCE "See more" TOGGLE
+// ➔➔ EXPERIENCE Scroll TOGGLE for extra-content
+document.addEventListener("DOMContentLoaded", () => {
+  const experienceItems = document.querySelectorAll('.bio-content.extra-experience');
+
+  experienceItems.forEach(item => {
+    const extraContent = item.querySelector('.extra-content');
+
+    item.addEventListener('mouseenter', () => {
+      extraContent.style.display = 'block';  // Show extra content
+      extraContent.style.opacity = '1';     // Fade in extra content
+    });
+
+    item.addEventListener('mouseleave', () => {
+      extraContent.style.display = 'none';  // Hide extra content
+      extraContent.style.opacity = '0';     // Fade out extra content
+    });
+  });
+});
+
+
+// ➔➔ EXPERIENCE "See more" TOGGLE for extra-experience
 document.addEventListener("DOMContentLoaded", () => {
   const btnSeeMore = document.querySelector("#see-more");
   const btnSeeLess = document.querySelector("#see-less");
