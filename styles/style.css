@@ -144,22 +144,30 @@ li.menu-item-end.m-projects  a{
     height: 24%;
 }
 
+
+
 #about-text h2 {
-    font-size: 50px;
+    font-size: 45px;
     letter-spacing: 20px;
     text-transform: uppercase;
     font-weight: bold !important;
+    padding-left: 10px !important;
+
 }
+
 
 #about-text p {
     text-align: left;
-    font-size: 18px;
-    width: 70%;
+    font-size: 16px;
+    width: 75%;
     min-width: 500px;
+    padding-left: 10px !important;
 }
 
 #highlights h2 {
     font-size: 30px;
+    padding-right: 10px !important;
+
 }
 
 .ct-v-2 {
@@ -186,6 +194,7 @@ li.menu-item-end.m-projects  a{
 
 /* ➔➔➔➔ BIO  */
 #bio {
+    margin-top: 28%;
     flex-direction: row;
     justify-content: center;
 }
@@ -211,7 +220,7 @@ li.menu-item-end.m-projects  a{
 }
 
 .ct-h-1 {
-    width: 25%;
+    width: 20%;
     height: 100%;
 }
 
