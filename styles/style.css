@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Short+Stack&family=Space+Grotesk:wght@300..700&display=swap');
+
 /* General body styling */
 body {
     margin: 0;
-    font-family: "Host Grotesk", sans-serif;}
+    font-family: "Host Grotesk", sans-serif;
+}
 
 /* For headings or other areas where you want to use Short Stack */
-h1, h2, h3, h4, h5, h6, p, span, a, li, label, figure{
-    font-family: "Host Grotesk", sans-serif;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+label,
+figure {
+    font-family: "Host Grotesk", sans-serif;
+}
 
 
 html {
@@ -76,7 +90,7 @@ html {
     text-align: left;
 }
 
-li.menu-item-end.m-projects  a{
+li.menu-item-end.m-projects a {
     margin-right: 10px !important;
 }
 
@@ -261,25 +275,34 @@ li.menu-item-end.m-projects  a{
     max-height: 0;
     overflow: hidden;
     text-align: right;
-    padding-left: 60px; /* Change from margin-left to padding-left */
-    padding-bottom: 20px; /* Add a smaller padding for a better effect */
+    padding-left: 60px;
+    padding-bottom: 20px;
     transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.bio-content .extra-content p{
+
+    font-size: 14px !important;
 }
 
 /* Show extra content when hovering over the experience item */
 .bio-content:hover .extra-content {
     opacity: 1;
-    max-height: 500px; /* Set a max-height value (adjust as needed) */
-    padding-bottom: 60px; /* Adjust padding for when content is revealed */
+    max-height: 500px;
+    /* Set a max-height value (adjust as needed) */
+    padding-bottom: 60px;
+    /* Adjust padding for when content is revealed */
     transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* When hovering over the experience item, we add the 'visible' class to show extra content */
 .bio-content .extra-content.visible {
     opacity: 1;
-    max-height: 500px; /* Adjust max-height as needed */
+    max-height: 500px;
+    /* Adjust max-height as needed */
     transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-  }
+}
+
 
 
 
@@ -288,7 +311,7 @@ li.menu-item-end.m-projects  a{
 
 /* ➔➔➔➔ SKILLS  */
 
-#skills-details  {
+#skills-details {
     font-size: 30px;
     text-align: right;
     font-weight: bold;
