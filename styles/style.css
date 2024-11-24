@@ -70,13 +70,15 @@ html {
     justify-content: flex-end;
 }
 
-.menu-item-start a, .menu-item-end a {
+.menu-item-start a,
+.menu-item-end a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
 }
 
-.menu-item-start a:hover, .menu-item-end a:hover {
+.menu-item-start a:hover,
+.menu-item-end a:hover {
     color: #007BFF;
 }
 
@@ -150,23 +152,23 @@ li.menu-item-end.m-projects a {
     font-size: 73px;
     position: fixed;
     z-index: 10;
-    
+
 }
 
 #name-cta h1 a {
-text-decoration: none;
-color: #00000052;
+    text-decoration: none;
+    color: #00000052;
 
 }
 
 #name-cta h1 a:hover {
     text-decoration: underline;
     color: #00000052;
-    
+
 }
 
 #name-cta h1 a:active {
-    color: #000000 !important; 
+    color: #000000 !important;
 }
 
 
@@ -297,8 +299,7 @@ color: #00000052;
     transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.bio-content .extra-content p{
-
+.bio-content .extra-content p {
     font-size: 14px !important;
 }
 
@@ -429,7 +430,7 @@ h3 {
 
 }
 
-.step p{
+.step p {
 
     font-weight: 400;
 
@@ -572,6 +573,19 @@ footer {
     }
 }
 
+@media (max-width: 1045px) {
+
+/* ➔➔➔➔ PRESENTATION ➔➔➔➔ */
+    
+    #about-text p {
+
+        width: 90%;
+        min-width: auto;
+    }
+
+}
+
+
 
 @media (max-width: 995px) {
 
@@ -597,6 +611,12 @@ footer {
         margin-bottom: 0;
     }
 
+    /* ➔➔➔➔ BIO  */
+    #bio {
+        margin-top: 48%;
+
+    }
+
     /* ➔➔➔ CONTACT */
 
     .internship-cta {
@@ -616,7 +636,10 @@ footer {
     #bio {
         flex-direction: row;
         justify-content: center;
+        margin-top: 68%;
+
     }
+
 
     #education,
     #experience {
@@ -643,11 +666,29 @@ footer {
         /* Stack elements in a column */
     }
 
+    #name-cta h1 {
+top:10px;
+font-size: 30px;
+line-height: 34px;;
+    
+    }
+
     .ct-v-1,
     .ct-v-2 {
         height: auto;
         width: 100%;
         margin: 10px 0;
+    }
+
+    #about-text  {
+width:84%;
+align-items: end;
+    
+    }
+
+    #highlights h2 {
+text-align: right;
+    
     }
 
     .w-50 {
@@ -667,6 +708,10 @@ footer {
     }
 
     /* ➔➔➔➔ SKILLS  */
+
+    .skills-isotope .container9{
+        margin-left: 16% !important;
+    }
     .row-center {
         flex-direction: column;
         justify-content: center;
@@ -683,6 +728,13 @@ footer {
         height: auto;
         margin-left: auto;
     }
+
+    /* ➔➔➔➔ PROJECTS */
+
+    .text-right{
+        text-align: right !important;
+    }
+
 
 
 }
