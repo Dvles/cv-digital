@@ -1,3 +1,11 @@
+console.log("(•‿•)");
+console.log("Hello IT world");
+console.log("Let's work together!");
+console.info("AVAILABLE: FROM XX to XX");
+
+
+
+
 // ➔➔ PRESENTATION SCROLL-SPEED
 const aboutText = document.getElementById('about-text');
 const highlights = document.getElementById('highlights');
@@ -20,22 +28,21 @@ window.addEventListener('scroll', () => {
 
 // ➔➔ EXPERIENCE Scroll TOGGLE for extra-content
 document.addEventListener("DOMContentLoaded", () => {
-  const experienceItems = document.querySelectorAll('.bio-content.extra-experience');
+  const experienceItems = document.querySelectorAll('.bio-content');
 
   experienceItems.forEach(item => {
     const extraContent = item.querySelector('.extra-content');
 
     item.addEventListener('mouseenter', () => {
-      extraContent.style.display = 'block';  // Show extra content
-      extraContent.style.opacity = '1';     // Fade in extra content
+      extraContent.classList.add('visible');  // Add the visible class to trigger the transition
     });
 
     item.addEventListener('mouseleave', () => {
-      extraContent.style.display = 'none';  // Hide extra content
-      extraContent.style.opacity = '0';     // Fade out extra content
+      extraContent.classList.remove('visible');  // Remove the visible class to hide the extra content
     });
   });
 });
+
 
 
 // ➔➔ EXPERIENCE "See more" TOGGLE for extra-experience

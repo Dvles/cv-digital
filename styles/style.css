@@ -209,23 +209,29 @@ html {
 
 /* Initial hidden state for the extra content */
 .bio-content .extra-content {
-    display: none;
-    text-align: right;
-    margin-left: 60px;;
-    margin-bottom: 60px;
     opacity: 0;
-    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-    /* Smooth transition */
+    max-height: 0;
+    overflow: hidden;
+    text-align: right;
+    padding-left: 60px; /* Change from margin-left to padding-left */
+    padding-bottom: 20px; /* Add a smaller padding for a better effect */
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Show extra content when hovering over the experience item */
 .bio-content:hover .extra-content {
-    display: block;
-    /* Show the extra content */
     opacity: 1;
-    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-    /* Smooth fade-in effect */
+    max-height: 500px; /* Set a max-height value (adjust as needed) */
+    padding-bottom: 60px; /* Adjust padding for when content is revealed */
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
+
+/* When hovering over the experience item, we add the 'visible' class to show extra content */
+.bio-content .extra-content.visible {
+    opacity: 1;
+    max-height: 500px; /* Adjust max-height as needed */
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  }
 
 
 /* ➔➔➔➔ SKILLS  */
