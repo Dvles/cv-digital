@@ -613,6 +613,16 @@ footer {
         margin-bottom: 0;
     }
 
+    /* ➔➔➔➔ PRESENTATION  */
+
+    #name-cta h1 {
+        top: 50px;
+        font-size: 60px;
+        line-height: 65px;
+        ;
+
+    }
+
     /* ➔➔➔➔ BIO  */
     #bio {
         margin-top: 48%;
