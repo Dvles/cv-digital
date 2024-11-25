@@ -156,21 +156,28 @@ li.menu-item-end.m-projects a {
 
 }
 
+#name-cta {
+    color: #00000022;
+    transition: color 0.3s ease;
+}
+
+#name-cta.active {
+    color: black;
+}
+
+
 #name-cta h1 a {
     text-decoration: none;
-    color: #00000052;
+    color: inherit;
 
 }
 
 #name-cta h1 a:hover {
     text-decoration: underline;
-    color: #00000052;
-
+    
 }
 
-#name-cta h1 a:active {
-    color: #000000 !important;
-}
+
 
 
 

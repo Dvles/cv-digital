@@ -6,8 +6,32 @@ console.info("AVAILABLE: FROM XX to XX");
 
 
 
+// ➔➔ PRESENTATION NAME CTA
 
+document.addEventListener("DOMContentLoaded", () => {
+  const nameCta = document.querySelector("#name-cta");
+  const presentationSection = document.querySelector("#presentation");
 
+  const observerOptions = {
+    root: null, // Use the viewport as the root
+    threshold: 0.5 // Trigger when 50% of the section is visible
+  };
+
+  const observerCallback = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Section is in view, make #name-cta black
+        nameCta.classList.add("active");
+      } else {
+        // Section is out of view, make #name-cta grey
+        nameCta.classList.remove("active");
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  observer.observe(presentationSection);
+});
 
 // ➔➔ PRESENTATION SCROLL-SPEED
 const aboutText = document.getElementById('about-text');
