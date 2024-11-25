@@ -1012,6 +1012,12 @@ footer {
     }
 
     /* ➔➔➔➔ SKILLS */
+
+    .checkbox-group{
+        text-align: right;
+
+    }
+
     .ct-h-3 {
         width: 100%;
     }
@@ -1030,9 +1036,27 @@ footer {
 
     /* ➔➔➔➔ CONTACT */
 
+    .c-layout {
+        height: 80vh;
+    }
+
     #contact {
         margin-top: 50%;
     }
+
+    .internship-cta {
+        max-width: 66%;
+        margin-bottom: 0;
+    }
+
+    .tagline h1 {
+        font-size: 60px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+    }
+
+    
 
 
 
