@@ -1059,7 +1059,14 @@ footer {
 
 
 
-    @media (max-width: 360px) {
+@media (max-width: 412px){}
+#about-text div {
+    margin-left: 13%;
+}
+
+
+
+    @media (max-width: 384px) {
 
 
         /* ➔➔➔➔ Presentation */
@@ -1070,10 +1077,32 @@ footer {
             top: 30px;
         }
 
-        #about-text h2 {
+        #name-cta {
+            font-size: 18px !important; 
+            transition: color 0.3s ease, font-size 0.3s ease !important;
+        }
+
+        #name-cta.active {
             font-size: 30px;
+        }
+
+        #about-text div {
+            width: 88%;
+            margin-left: 12%;
+        }
+    
+
+        #about-text h2 {
+            font-size: 24px;
 
         }
+
+        #about-text p {
+            font-size: 15px;
+
+
+        }
+
 
         #highlights h2 {
             margin-top: 35%;
@@ -1084,9 +1113,11 @@ footer {
 
         /* ➔➔➔➔ BIO  */
         #bio {
-
             margin-top: 298%;
+        }
 
+        #bio p {
+            font-size: 15px;
         }
 
         #education {

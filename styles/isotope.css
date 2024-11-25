@@ -190,7 +190,7 @@ font-size: 15px;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 384px) {
 
   /* Default checkbox style */
   input[type="checkbox"] {
@@ -238,13 +238,15 @@ font-size: 15px;
   }
 
   .button {
-    font-size: 12px; 
+    font-size: 15px; 
     padding: 0.3em 0.6em;
     margin-bottom: 0; 
+    text-align: right;
   }
 
   .button-group {
-    justify-content: space-between; 
+    display: flex;
+    justify-content: flex-end; 
     gap: 5px; 
     width: 100%; 
   }
