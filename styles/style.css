@@ -19,6 +19,11 @@ body::before {
     opacity: 0.7;
 }
 
+a {
+    cursor: crosshair;
+}
+
+
 /* For headings or other areas where you want to use Short Stack */
 h1,
 h2,
@@ -93,6 +98,7 @@ html {
 .menu-item-start a:hover,
 .menu-item-end a:hover {
     color: #007BFF;
+    cursor: crosshair;
 }
 
 
@@ -189,6 +195,7 @@ li.menu-item-end.m-projects a {
 
 #name-cta h1 a:hover {
     text-decoration: underline;
+    cursor: crosshair;
 
 }
 
@@ -234,6 +241,7 @@ li.menu-item-end.m-projects a {
 
 #highlights h2 span:hover {
     color:#79e882cf;
+    cursor: crosshair;
 
 }
 
@@ -326,6 +334,7 @@ span.tooltip:nth-child(1):hover, #see-less > p:nth-child(1):hover {
     color: #79e882cf;
     border-bottom: 5px solid #79e8825b; 
     padding-bottom: 0; 
+    cursor: crosshair;
 }
 
 
@@ -515,6 +524,7 @@ article {
 
 .step img{
     border-radius: 1em 0 0 1em ;
+    filter: blur(2px);
 }
 
 .step:last-of-type {
@@ -522,7 +532,11 @@ article {
 }
 
 .step.is-active {
-    background-color: rgba(0, 0, 255, 0.111);
+    /* background-color: rgb(234, 142, 142); */
+}
+
+.step.is-active img {
+    filter: blur(0px);
 }
 
 .step-content {
@@ -599,12 +613,15 @@ figure.sticky {
     opacity: 0.4;
     font-size: 30px;
     font-weight: bold;
+    cursor: crosshair;
 }
 
 .unactive-filter:hover {
     opacity: 0.8;
     font-size: 30px;
     font-weight: bold;
+    cursor: crosshair;
+
 }
 
 
@@ -637,6 +654,26 @@ figure.sticky {
     max-width: 33%;
     /* Teach me how to prevent this DIY hack */
     margin-bottom: -80px;
+}
+
+.internship-cta p a{
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px dashed #79e882cf; 
+    padding-bottom: 1px; 
+}
+
+.internship-cta p a:hover {
+    color: #79e882cf;
+    border-bottom: 5px solid #79e8825b; 
+    padding-bottom: 0; 
+    cursor: crosshair;
+}
+
+
+
+.internship-cta span {
+    color: #79e882;
 }
 
 
@@ -683,6 +720,7 @@ footer {
 
 .contact-layout a:hover {
     color: #007BFF;
+    cursor: crosshair;
 }
 
 .contact-layout .empty-column {
