@@ -190,3 +190,51 @@ font-size: 15px;
   }
 }
 
+@media (max-width: 360px) {
+
+  /* Default checkbox style */
+  input[type="checkbox"] {
+    width: 18px; /* Slightly smaller for mobile view */
+    height: 18px;
+    border: 2px solid #000;
+    appearance: none; /* Removes default browser styling */
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    vertical-align: middle; /* Align checkbox to the middle of text */
+  }
+
+  /* Checked checkbox */
+  input[type="checkbox"]:checked {
+    background-color: #000;
+    border-color: #000;
+    position: relative;
+  }
+
+  /* Add a checkmark */
+  input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: #79e883;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Ensure the label text and checkbox align properly */
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow checkboxes and labels to wrap on smaller screens */
+    justify-content: flex-end; /* Align checkboxes and labels to the right */
+    gap: 10px; /* Space between checkboxes */
+    font-size: 16px; /* Adjust the font size for better readability */
+  }
+
+  .checkbox-group label {
+    display: inline-flex; /* Align label text inline with the checkbox */
+    align-items: center; /* Vertically center the checkbox and the text */
+    margin-left: 10px; /* Space between checkboxes and labels */
+  }
+}
