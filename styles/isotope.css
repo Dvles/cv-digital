@@ -26,16 +26,16 @@ input[type="checkbox"] {
 
 /* Checked checkbox */
 input[type="checkbox"]:checked {
-  background-color: #000;
-  border-color: #000;
+  border-color: #79e883;
   position: relative;
 }
 
 /* Add a checkmark */
 input[type="checkbox"]:checked::after {
   content: "✓";
-  color: #79e883;
+  color: #000000;
   font-size: 14px;
+  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,8 +91,8 @@ input[type="checkbox"]:checked::after {
   margin-right: 1px;
 }
 
-/* .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; } */
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; } 
 
 /* ---- table-like ---- */
 .table-like {

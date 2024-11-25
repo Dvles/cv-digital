@@ -422,6 +422,11 @@ li.menu-item-end.m-projects a {
     font-weight: bold;
 }
 
+#skills-details span{
+color:  #79e882;
+}
+
+
 
 .row-center {
     flex-direction: row;
