@@ -307,7 +307,7 @@ li.menu-item-end.m-projects a {
     font-size: 18px;
 }
 
-#bio span {
+#bio .bio-content span {
     color: #000000;
     background-color: #79e882cf;
     font-size: 14px;
@@ -315,6 +315,20 @@ li.menu-item-end.m-projects a {
     margin-top: 100px !important;
     border-radius: 5px;
 }
+
+span.tooltip:nth-child(1), #see-less > p:nth-child(1) {
+    text-decoration: none;
+    border-bottom: 2px dashed #79e882cf; 
+    padding-bottom: 1px; 
+}
+
+span.tooltip:nth-child(1):hover, #see-less > p:nth-child(1):hover {
+    color: #79e882cf;
+    border-bottom: 5px solid #79e8825b; 
+    padding-bottom: 0; 
+}
+
+
 
 #bio a {
     color: #000000;
