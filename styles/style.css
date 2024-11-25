@@ -242,6 +242,10 @@ li.menu-item-end.m-projects a {
     font-size: 18px;
 }
 
+#bio span {
+    color: rgb(18, 167, 18);
+}
+
 #education,
 #experience {
     margin: 0 5px;
@@ -617,10 +621,9 @@ footer {
 
     #name-cta h1 {
         top: 50px;
-        font-size: 60px;
-        line-height: 65px;
-        ;
-
+        font-size: 55px;
+        line-height: 50px;
+        letter-spacing: 0.2px !important;
     }
 
     /* ➔➔➔➔ BIO  */
@@ -641,6 +644,15 @@ footer {
     #my_projects {
         margin-top: 450px !important;
     }
+
+    figure.sticky {
+        position: sticky;
+        width: 100%;
+        height: 50vh;
+        margin: 0;
+        top: 30vh;
+    }
+
 
 
     /* ➔➔➔ CONTACT */
@@ -697,9 +709,7 @@ footer {
     }
 
     #name-cta h1 {
-        top: 10px;
-        font-size: 30px;
-        line-height: 34px;
+        line-height: 50px;
         ;
 
     }
@@ -761,7 +771,16 @@ footer {
         margin-left: auto;
     }
 
-    /* ➔➔➔➔ PROJECTS */
+    /* ➔➔➔➔ SCROLLY SIDE */
+
+    #my_projects {
+        margin-top: 450px !important;
+    }
+
+    figure.sticky {
+        top: 12vh;
+    }
+
 
     .text-right {
         text-align: right !important;
