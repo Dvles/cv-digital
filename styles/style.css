@@ -152,6 +152,7 @@ li.menu-item-end.m-projects a {
     font-size: 73px;
     position: fixed;
     z-index: 10;
+    line-height: 70px;
 
 }
 
@@ -181,7 +182,6 @@ li.menu-item-end.m-projects a {
 
 #about-text h2 {
     font-size: 45px;
-    letter-spacing: 20px;
     text-transform: uppercase;
     font-weight: bold !important;
     padding-left: 10px !important;
@@ -575,8 +575,8 @@ footer {
 
 @media (max-width: 1045px) {
 
-/* ➔➔➔➔ PRESENTATION ➔➔➔➔ */
-    
+    /* ➔➔➔➔ PRESENTATION ➔➔➔➔ */
+
     #about-text p {
 
         width: 90%;
@@ -588,6 +588,8 @@ footer {
 
 
 @media (max-width: 995px) {
+
+
 
     /* TO REMOVE AFTER STRUCTURE'S COMPLETED */
     body {
@@ -617,12 +619,30 @@ footer {
 
     }
 
+    /* ➔➔➔➔ SKILLS  */
+
+    #skills {
+        margin-top: 450px;
+    }
+
+
+    /* ➔➔➔➔ SCROLLY SIDE */
+
+    #my_projects {
+        margin-top: 450px !important;
+    }
+
+
     /* ➔➔➔ CONTACT */
 
     .internship-cta {
         max-width: 50%;
 
     }
+
+
+
+
 
 
 
@@ -667,10 +687,11 @@ footer {
     }
 
     #name-cta h1 {
-top:10px;
-font-size: 30px;
-line-height: 34px;;
-    
+        top: 10px;
+        font-size: 30px;
+        line-height: 34px;
+        ;
+
     }
 
     .ct-v-1,
@@ -680,15 +701,15 @@ line-height: 34px;;
         margin: 10px 0;
     }
 
-    #about-text  {
-width:84%;
-align-items: end;
-    
+    #about-text {
+        width: 84%;
+        align-items: end;
+
     }
 
     #highlights h2 {
-text-align: right;
-    
+        text-align: right;
+
     }
 
     .w-50 {
@@ -709,9 +730,10 @@ text-align: right;
 
     /* ➔➔➔➔ SKILLS  */
 
-    .skills-isotope .container9{
+    .skills-isotope .container9 {
         margin-left: 16% !important;
     }
+
     .row-center {
         flex-direction: column;
         justify-content: center;
@@ -731,7 +753,7 @@ text-align: right;
 
     /* ➔➔➔➔ PROJECTS */
 
-    .text-right{
+    .text-right {
         text-align: right !important;
     }
 
