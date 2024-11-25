@@ -194,15 +194,15 @@ font-size: 15px;
 
   /* Default checkbox style */
   input[type="checkbox"] {
-    width: 18px; /* Slightly smaller for mobile view */
+    width: 18px; 
     height: 18px;
     border: 2px solid #000;
-    appearance: none; /* Removes default browser styling */
+    appearance: none; 
     background-color: transparent;
     cursor: pointer;
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 4px; 
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    vertical-align: middle; /* Align checkbox to the middle of text */
+    vertical-align: middle; 
   }
 
   /* Checked checkbox */
@@ -212,7 +212,7 @@ font-size: 15px;
     position: relative;
   }
 
-  /* Add a checkmark */
+  /* checkmark */
   input[type="checkbox"]:checked::after {
     content: "✓";
     color: #79e883;
@@ -223,18 +223,29 @@ font-size: 15px;
     transform: translate(-50%, -50%);
   }
 
-  /* Ensure the label text and checkbox align properly */
   .checkbox-group {
     display: flex;
-    flex-wrap: wrap; /* Allow checkboxes and labels to wrap on smaller screens */
-    justify-content: flex-end; /* Align checkboxes and labels to the right */
-    gap: 10px; /* Space between checkboxes */
-    font-size: 16px; /* Adjust the font size for better readability */
+    flex-wrap: wrap; 
+    justify-content: flex-end; 
+    gap: 10px; 
+    font-size: 16px; 
   }
 
   .checkbox-group label {
-    display: inline-flex; /* Align label text inline with the checkbox */
-    align-items: center; /* Vertically center the checkbox and the text */
-    margin-left: 10px; /* Space between checkboxes and labels */
+    display: inline-flex; 
+    align-items: center; 
+    margin-left: 10px; 
+  }
+
+  .button {
+    font-size: 12px; 
+    padding: 0.3em 0.6em;
+    margin-bottom: 0; 
+  }
+
+  .button-group {
+    justify-content: space-between; 
+    gap: 5px; 
+    width: 100%; 
   }
 }
