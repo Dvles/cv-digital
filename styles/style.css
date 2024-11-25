@@ -722,14 +722,17 @@ footer {
 
     }
 
-
-
     .ct-v-1,
     .ct-v-2 {
         height: auto;
         width: 100%;
         margin: 10px 0;
     }
+
+    #about-text {
+        margin-top: 20%;
+    }
+
 
     #about-text div {
         width: 84%;
