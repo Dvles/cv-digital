@@ -160,3 +160,10 @@ input[type="checkbox"]:checked::after {
     max-width: 20px;
   }
 }
+
+@media (max-width: 690px) {
+  .table-like__item > * {
+font-size: 15px;
+  }
+
+}

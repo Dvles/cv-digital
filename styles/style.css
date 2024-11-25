@@ -180,6 +180,14 @@ li.menu-item-end.m-projects a {
 
 
 
+#about-text {
+
+    margin-top: -50px;
+
+}
+
+
+
 #about-text h2 {
     font-size: 45px;
     text-transform: uppercase;
@@ -732,7 +740,7 @@ footer {
         margin-bottom: -1%;
     }
 
-    
+
 
     #highlights h2 {
         text-align: right;
@@ -757,13 +765,9 @@ footer {
 
     /* ➔➔➔➔ SKILLS  */
 
-    .skills-isotope .container9 {
-        margin-left: 16% !important;
-    }
 
     .row-center {
         flex-direction: column;
-        justify-content: center;
     }
 
     .w-50-h-100 {
@@ -776,6 +780,24 @@ footer {
         width: 70%;
         height: auto;
         margin-left: auto;
+    }
+
+
+
+    .ct-h-3 {
+        border: 5px solid rgba(41, 255, 17, 0.445);
+        width: 70%;
+        margin-left: auto;
+        /* Pushes the container to the right */
+        margin-right: 0;
+        /* Ensures it aligns fully to the right */
+        display: block;
+        /* Ensures standard layout unless flexbox is required elsewhere */
+    }
+
+    .skills-isotope #container9 {
+        width: 80%;
+
     }
 
     /* ➔➔➔➔ SCROLLY SIDE */
@@ -863,6 +885,26 @@ footer {
         margin: 0;
     }
 
+    /* ➔➔➔➔ SKILLS */
+
+    .ct-h-3 {
+        border: 5px solid rgba(41, 255, 17, 0.445);
+        width: 70%;
+        margin-left: auto;
+        /* Pushes the container to the right */
+        margin-right: 0;
+        /* Ensures it aligns fully to the right */
+        display: block;
+        /* Ensures standard layout unless flexbox is required elsewhere */
+    }
+
+    .skills-isotope #container9 {
+        width: 80%;
+
+    }
+
+
+
 
 
     /* ➔➔➔➔ PROJECTS SCROLL */
@@ -872,15 +914,13 @@ footer {
 
 
     figure.sticky {
-        position: sticky;
-        width: 100%;
-        height: 10vh !important;
-        background: rgb(71, 255, 71);
-
+        background-color: #007BFF;
+        height: 0vh !important;
     }
 
     figure.sticky div {
         text-align: right;
+
     }
 
     /* Centering the article */
