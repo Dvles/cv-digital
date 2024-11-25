@@ -513,6 +513,10 @@ article {
     flex-direction: column;
 }
 
+.step img{
+    border-radius: 1em 0 0 1em ;
+}
+
 .step:last-of-type {
     margin-bottom: 0;
 }
