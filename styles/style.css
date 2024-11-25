@@ -174,7 +174,7 @@ li.menu-item-end.m-projects a {
 
 #name-cta h1 a:hover {
     text-decoration: underline;
-    
+
 }
 
 
@@ -382,17 +382,17 @@ li.menu-item-end.m-projects a {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  .filter-detail.hidden {
+}
+
+.filter-detail.hidden {
     opacity: 0;
     visibility: hidden;
-  }
-  
-  .filter-detail:not(.hidden) {
+}
+
+.filter-detail:not(.hidden) {
     opacity: 1;
     visibility: visible;
-  }
+}
 
 
 
@@ -975,5 +975,65 @@ footer {
     .hidden {
         display: none;
     }
+
+}
+
+@media (max-width: 490px) {
+
+
+    /* ➔➔➔➔ Presentation */
+
+    #name-cta h1 {
+        font-size: 45px;
+        top: 30px;
+    }
+
+    #about-text h2 {
+        font-size: 30px;
+
+    }
+
+    #highlights h2 {
+        margin-top: 35%;
+    }
+
+
+
+
+    /* ➔➔➔➔ BIO  */
+    #bio {
+
+        margin-top: 198%;
+
+    }
+
+    #education{
+        padding-top: 12%;
+    }
+
+    /* ➔➔➔➔ SKILLS */
+    .ct-h-3 {
+        width: 100%;
+    }
+
+    #skills-details {
+        display: none;
+    }
+
+
+
+    /* ➔➔➔➔ PROJECTS SCROLL */
+
+    figure.sticky {
+        top: 20vh !important;
+    }
+
+    /* ➔➔➔➔ CONTACT */
+
+    #contact {
+        margin-top: 50%;
+    }
+
+
 
 }

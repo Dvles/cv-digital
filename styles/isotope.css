@@ -167,3 +167,26 @@ font-size: 15px;
   }
 
 }
+
+@media (max-width: 490px) {
+  .table-like__item > * {
+    font-size: 12px; /* Further reduce font size for very small screens */
+    padding: 1px 1px; /* Almost no padding for minimal scrolling */
+  }
+
+  .table-like__item {
+    padding: 2px 0; /* Compact row spacing */
+  }
+
+  /* Adjust column widths */
+  .table-like__item .name {
+    width: 40%; /* Allocate more space to 'name' */
+  }
+  .table-like__item .domain {
+    width: 35%; /* Adjust proportionally */
+  }
+  .table-like__item .level {
+    width: 25%; /* Reduce width for the 'level' column */
+  }
+}
+
