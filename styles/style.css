@@ -172,8 +172,8 @@ li.menu-item-end.m-projects a {
 }
 
 #name-cta {
-    color: #00000022;
-    transition: color 0.3s ease;
+    color: #79e88278;
+    transition: color 0.8s ease;
 }
 
 #name-cta.active {
@@ -191,10 +191,6 @@ li.menu-item-end.m-projects a {
     text-decoration: underline;
 
 }
-
-
-
-
 
 .ct-v-1 {
     height: 24%;
@@ -215,7 +211,10 @@ li.menu-item-end.m-projects a {
     text-transform: uppercase;
     font-weight: bold !important;
     padding-left: 10px !important;
+}
 
+#about-text span {
+    color:#79e882cf;
 }
 
 
@@ -273,7 +272,26 @@ li.menu-item-end.m-projects a {
 }
 
 #bio span {
-    color: rgb(18, 167, 18);
+    color: #000000;
+    background-color: #79e882cf;
+    font-size: 14px;
+    padding: 2px 8px;
+    margin-top: 100px !important;
+    border-radius: 5px;
+}
+
+#bio a {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-style: dashed; 
+    text-decoration-thickness: 5px; 
+    text-decoration-color:#79e882cf;
+}
+
+#bio a:hover {
+    color: #79e882cf;
+    text-decoration-style: solid; 
+    text-decoration-color:#79e882cf;
 }
 
 #education,
