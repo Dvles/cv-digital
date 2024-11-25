@@ -282,16 +282,15 @@ li.menu-item-end.m-projects a {
 
 #bio a {
     color: #000000;
-    text-decoration: underline;
-    text-decoration-style: dashed; 
-    text-decoration-thickness: 5px; 
-    text-decoration-color:#79e882cf;
+    text-decoration: none;
+    border-bottom: 2px dashed #79e882cf; 
+    padding-bottom: 1px; 
 }
 
 #bio a:hover {
     color: #79e882cf;
-    text-decoration-style: solid; 
-    text-decoration-color:#79e882cf;
+    border-bottom: 5px solid #79e8825b; 
+    padding-bottom: 0; 
 }
 
 #education,
