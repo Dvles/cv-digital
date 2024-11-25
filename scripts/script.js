@@ -80,18 +80,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ➔➔ SKILLS Scroll TOGGLE for extra-content
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll('.button'); // Target all buttons
+  const filterDetails = document.querySelectorAll('.filter-detail'); // Target all filter-detail sections
+
+  filterButtons.forEach(button => {
+      button.addEventListener('mouseenter', () => {
+          const filterClass = button.classList[1].replace('btn-', 'filter-'); // Map button class to filter class
+          filterDetails.forEach(detail => {
+              detail.classList.add('hidden'); // Hide all filter details first
+              if (detail.classList.contains(filterClass)) {
+                  detail.classList.remove('hidden'); // Show only the corresponding filter detail
+              }
+          });
+      });
+
+      button.addEventListener('mouseleave', () => {
+          filterDetails.forEach(detail => {
+              if (!detail.classList.contains('original')) {
+                  detail.classList.add('hidden'); // Re-hide all except the original
+              }
+          });
+      });
+  });
+});
+
+
 
 
 
 // ➔➔ Skills detail FILTER TOGGLE
 document.addEventListener("DOMContentLoaded", () => {
   // Select the filter detail elements
-  const filterOriginal = document.querySelector("#filter-original");
-  const filterDomain = document.querySelector("#filter-domain");
-  const filterName = document.querySelector("#filter-name");
-  const filterLevel = document.querySelector("#filter-level");
-
-  // Select all filter detail containers
   const allFilterDetails = document.querySelectorAll(".filter-detail");
 
   // Select the filter buttons
@@ -103,34 +124,30 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to hide all filter details
   function hideAllFilterDetails() {
     allFilterDetails.forEach(filterDetail => {
-      filterDetail.classList.add("hidden"); // Hide all filter details
+      filterDetail.classList.add("hidden"); // Add 'hidden' to all filter details
     });
   }
 
-  // Button event listener for "Original"
-  btnOriginalFilter.addEventListener("click", () => {
-    hideAllFilterDetails(); // Hide all filter details
-    filterOriginal.classList.remove("hidden"); // Show original filter details
-  });
+  // Add hover event listeners to each button
+  const buttonDetailsMap = [
+    { button: btnOriginalFilter, detail: document.querySelector("#filter-original") },
+    { button: btnNameFilter, detail: document.querySelector("#filter-name") },
+    { button: btnDomainFilter, detail: document.querySelector("#filter-domain") },
+    { button: btnLevelFilter, detail: document.querySelector("#filter-level") }
+  ];
 
-  // Button event listener for "Name"
-  btnNameFilter.addEventListener("click", () => {
-    hideAllFilterDetails(); // Hide all filter details
-    filterName.classList.remove("hidden"); // Show name filter details
-  });
+  buttonDetailsMap.forEach(({ button, detail }) => {
+    button.addEventListener("mouseenter", () => {
+      hideAllFilterDetails(); // Hide all other filter details
+      detail.classList.remove("hidden"); // Show the corresponding filter detail
+    });
 
-  // Button event listener for "Domain"
-  btnDomainFilter.addEventListener("click", () => {
-    hideAllFilterDetails(); // Hide all filter details
-    filterDomain.classList.remove("hidden"); // Show domain filter details
-  });
-
-  // Button event listener for "Level"
-  btnLevelFilter.addEventListener("click", () => {
-    hideAllFilterDetails(); // Hide all filter details
-    filterLevel.classList.remove("hidden"); // Show level filter details
+    button.addEventListener("mouseleave", () => {
+      detail.classList.add("hidden"); // Hide the filter detail when mouse leaves
+    });
   });
 });
+
 
 
 // ➔➔ PROJECT FILTER TOGGLE 
