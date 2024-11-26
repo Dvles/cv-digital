@@ -653,7 +653,7 @@ figure.sticky {
 .internship-cta {
     max-width: 33%;
     /* Teach me how to prevent this DIY hack */
-    margin-bottom: -80px;
+    margin-top: 80px;
 }
 
 .internship-cta p a{
@@ -679,6 +679,7 @@ figure.sticky {
 
 
 .tagline h1 {
+    margin-top: 0;
     font-size: 90px;
     text-align: right;
     line-height: 1;
