@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ➔➔ ISOTOPE.JS 
 // external js: isotope.pkgd.js
 (function () {
-  // Ensure jQuery is loaded before running the code (Remove this if you don't use jQuery)
+  // Ensure jQuery is loaded before running the code 
   if (typeof $ === 'undefined') {
     console.error('jQuery is not loaded!');
     return;
@@ -281,17 +281,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // Toggle visibility for graphics items
     toggleGraphicsDisplay(filters);
   });
-  // Bind sort button click
-  $('#sorts').on('click', 'button', function () {
-    var sortValue = $(this).attr('data-sort-value');
-    if (sortValue === 'level') {
-      // If sorting by level, sort in descending order
-      $table.isotope({ sortBy: 'level', sortAscending: false });
-    } else {
-      // For other sorting (name, domain)
-      $table.isotope({ sortBy: sortValue });
-    }
+// Bind sort button click
+$('#sorts').on('click', 'button', function () {
+  var sortValue = $(this).attr('data-sort-value');
+  var ascending = true; // Default to ascending order
+
+  // Set descending order for specific cases
+  if (sortValue === 'level') {
+      ascending = false;
+  }
+
+  // Update Isotope sorting
+  $table.isotope({
+      sortBy: sortValue,
+      sortAscending: ascending,
   });
+});
   // Change is-checked class on buttons
   $('.button-group').each(function (i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
@@ -303,6 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial state
   toggleGraphicsDisplay(['web', 'graphics']); // Assume all categories are checked initially
 })();
+
 // ➔➔ SCROLL BASED BEHAVIOUR  
 console.log(d3.version);
 const container = d3.select('#scrolly-side');
