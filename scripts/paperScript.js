@@ -17,7 +17,7 @@ var lastPos = paper.view.center;
 
 function moveHandler(event) {
     if (!loaded) return;
-    if (lastPos.getDistance(event.point) < 10) return;
+    if (lastPos.getDistance(event.point) < 5) return;
     lastPos = event.point;
 
     var size = this.bounds.size.clone();
