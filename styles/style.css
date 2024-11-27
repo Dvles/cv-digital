@@ -356,6 +356,7 @@ span.tooltip:nth-child(1):hover, #see-less > p:nth-child(1):hover {
     text-decoration: none;
     border-bottom: 2px dashed #79e882cf; 
     padding-bottom: 1px; 
+    font-weight: bold;
 }
 
 #bio a:hover {
@@ -865,7 +866,12 @@ footer {
 
 @media (max-width: 932px) {
 
-
+    /* ➔➔➔➔ PRESENTATION  */
+    #name-cta h1 span {
+        display: none;
+            
+            }
+    
     /* ➔➔➔➔ BIO  */
     #bio {
         flex-direction: row;
@@ -917,10 +923,7 @@ footer {
         /* Stack elements in a column */
     }
 
-    #name-cta h1 span {
-display: none;
-        
-        }
+
 
     #name-cta h1 {
         line-height: 50px;
