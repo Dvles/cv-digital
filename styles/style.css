@@ -99,7 +99,7 @@ html {
 .menu-item-end a:hover {
     color: #000000;
     cursor: crosshair;
-    background-color: rgba(121, 232, 130, 0.58);
+    background-color: rgba(255, 255, 255, 0.899);
 
 }
 
@@ -208,6 +208,8 @@ vertical-align: top;
 color: #000000;
 font-weight: 900;
 letter-spacing: 10px;
+margin-left: 2px;
+
 
 }
 
