@@ -100,6 +100,9 @@ html {
     color: #000000;
     cursor: crosshair;
     background-color: rgba(255, 255, 255, 0.899);
+    text-decoration: underline;
+    border-radius: 0.5em;
+
 
 }
 
@@ -735,8 +738,11 @@ footer {
 }
 
 .contact-layout a:hover {
-    color: #007BFF;
+    color: #000000;
     cursor: crosshair;
+    background-color: rgba(255, 255, 255, 0.899);
+    text-decoration: underline;
+    border-radius: 0.35em;
 }
 
 .contact-layout .empty-column {
