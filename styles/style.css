@@ -437,22 +437,22 @@ span.tooltip:nth-child(1):hover, #see-less > p:nth-child(1):hover {
 }
 
 /* Show extra content when hovering over the experience item */
-.bio-content:hover .extra-content {
+/* .bio-content:hover .extra-content {
     opacity: 1;
     max-height: 500px;
     /* Set a max-height value (adjust as needed) */
-    padding-bottom: 60px;
+     /* padding-bottom: 60px;
     /* Adjust padding for when content is revealed */
-    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-}
+     /* transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}*/
 
 /* When hovering over the experience item, we add the 'visible' class to show extra content */
-.bio-content .extra-content.visible {
+/* .bio-content .extra-content.visible {
     opacity: 1;
     max-height: 500px;
     /* Adjust max-height as needed */
-    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
-}
+     /* transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1), max-height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}*/
 
 
 
