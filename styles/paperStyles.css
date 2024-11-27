@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Short+Stack&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    font-optical-sizing: auto;
+}
+
+
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a {
+    cursor: crosshair;
+}
+
+/* Ensure the canvas takes up the full viewport height and width */
+#myCanvas {
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+h1,
+h2,
+
+span,
+a,
+li{
+    font-family: "Host Grotesk", sans-serif;
+    z-index: 1;
+}
+
+
+
+
+
+/* Menu Styling */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Menu item styling */
+.menu-layout {
+    display: flex;
+    justify-content: center; /* Center the items within the container */
+    width: auto; /* Let the width adjust to the content */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item-start,
+.menu-item-end {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-start a,
+.menu-item-end a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.menu-item-start a:hover,
+.menu-item-end a:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+    border-radius: 0.5em;
+}
+
+.menu-item.empty-column {
+    display: none; /* Hide empty columns */
+}
+
+/* Ensure active menu item is highlighted */
+.menu-item-start a.active,
+.menu-item-end a.active {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+    border-radius: 0.5em;
+}
+
+
+
+
+
+
+/* ➔➔➔➔ PRESENTATION  */
+
+#welcome h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 73px;
+    position: fixed;
+    top: 4%;
+    z-index: 10;
+    line-height: 70px;
+
+}
+
+#welcome {
+    color: #00000078;
+    transition: color 0.8s ease;
+}
+
+
+
+
+#welcome h1 a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#welcome h1 a:hover {
+    text-decoration: underline;
+    cursor: crosshair;
+
+}
+
+
+#welcome h1 span{
+font-size: 40px;
+line-height: 40px;
+margin-top: 30%;
+width: 50%;
+min-width: 400px;
+}
+
+
