@@ -97,8 +97,10 @@ html {
 
 .menu-item-start a:hover,
 .menu-item-end a:hover {
-    color: #007BFF;
+    color: #000000;
     cursor: crosshair;
+    background-color: rgba(121, 232, 130, 0.58);
+
 }
 
 
@@ -196,6 +198,16 @@ li.menu-item-end.m-projects a {
 #name-cta h1 a:hover {
     text-decoration: underline;
     cursor: crosshair;
+
+}
+
+#name-cta h1 span {
+font-size: 13px;
+text-transform: uppercase;
+vertical-align: top;
+color: #000000;
+font-weight: 900;
+letter-spacing: 10px;
 
 }
 

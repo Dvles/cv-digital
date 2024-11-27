@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 a {
+            text-decoration: none; /* Remove underline */
+            position: relative; /* For positioning the border */
+            display: inline-block; /* To apply padding and manage layout */
+        }
+
+        h1 a::before {
+            content: ''; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid black; /* Set the border of the link */
+            pointer-events: none; /* So that the border doesn't interfere with the text */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+
+        #name-cta h1 a span {
+            display: inline-block; /* Make sure the text is inline-block so it can be styled separately */
+            transition: filter 0.3s ease;
+        }
+
+        #name-cta h1 a:hover span {
+            filter: blur(2px); /* Apply blur effect only to the text */
+        }
+
+        #name-cta h1 a:hover::before {
+            filter: none; /* Keep the border sharp */
+        }
+    </style>
+</head>
+<body>
+    <h1> 
+        <a href="#presentation">
+            hello! I'm<br>
+            <span>leslie devota</span>
+        </a>
+    </h1>
+</body>
+</html>
