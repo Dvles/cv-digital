@@ -104,6 +104,13 @@ html {
     border-radius: 0.5em;
 }
 
+.menu-layout li.active a {
+    color: #000000;
+    cursor: crosshair;
+    background-color: rgba(255, 255, 255, 0.899);
+    text-decoration: underline;
+    border-radius: 0.5em;
+  }
 
 
 .menu-item.empty-column {

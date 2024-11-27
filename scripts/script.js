@@ -3,7 +3,47 @@ console.log("Hello IT world");
 console.log("Let's work together!");
 console.info("AVAILABLE: FROM XX to XX");
 
+// ➔➔ MENU SCROLL HIGHLIGHT
 
+$(document).ready(function () {
+  // Cache selectors
+  const sections = $('section');
+  const menuLinks = $('.menu-layout li a');
+
+  function updateActiveMenuItem() {
+    let currentSection = null;
+
+    // Loop through all sections to check if they are in view
+    sections.each(function () {
+      const sectionTop = $(this).offset().top;
+      const sectionBottom = sectionTop + $(this).outerHeight();
+      const scrollPosition = $(window).scrollTop() + $(window).height();
+
+      // Check if the section is in view
+      if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+        currentSection = $(this).attr('id');
+        return false; // Exit loop once we've found the active section
+      }
+    });
+
+    // Highlight the corresponding menu link
+    menuLinks.each(function () {
+      const linkHref = $(this).attr('href').substring(1); 
+      if (linkHref === currentSection) {
+        $(this).parent().addClass('active');  
+        $(this).parent().siblings().removeClass('active');  
+      }
+    });
+  }
+
+  // Listen for scroll events
+  $(window).on('scroll', function () {
+    updateActiveMenuItem();
+  });
+
+  // Trigger the function on page load to highlight the active section initially
+  updateActiveMenuItem();
+});
 
 
 // ➔➔ PRESENTATION NAME CTA
