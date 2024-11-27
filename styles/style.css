@@ -745,6 +745,15 @@ footer {
 /* ➔➔➔➔ (RA) RESPONSIVE ADJUSTMENTS ➔➔➔➔ */
 
 
+@media (max-width: 1360px) {
+    /* ➔➔➔➔ PROJECTS SCROLL */
+
+    figure.sticky {
+        top: 40vh;
+    }
+}
+
+
 @media (max-width: 1230px) {
     .step-content {
         flex-direction: column;
@@ -902,6 +911,11 @@ footer {
         flex-direction: column;
         /* Stack elements in a column */
     }
+
+    #name-cta h1 span {
+display: none;
+        
+        }
 
     #name-cta h1 {
         line-height: 50px;
