@@ -747,7 +747,6 @@ footer {
 
 @media (max-width: 1360px) {
     /* ➔➔➔➔ PROJECTS SCROLL */
-
     figure.sticky {
         top: 40vh;
     }
@@ -755,14 +754,20 @@ footer {
 
 
 @media (max-width: 1230px) {
+    /* ➔➔➔➔ PROJECTS SCROLL */
     .step-content {
         flex-direction: column;
     }
 
     .step-content img {
         max-width: 100%;
+        border-radius: 1em !important;
+        
     }
 }
+
+
+
 
 @media (max-width: 1045px) {
 
