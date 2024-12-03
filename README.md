@@ -1,5 +1,6 @@
 # CV Digital | Digital Resume
 _EN_
+
 A simple one-page digital resume created to showcase my growing skills in web development and secure an internship or entry-level role. It reflects my interest in experimenting with JavaScript libraries and frontend design principles.
 
 ## Highlights
@@ -15,6 +16,7 @@ A simple one-page digital resume created to showcase my growing skills in web de
 __________________________________________________________________________________
 
 _FR_
+
 Un CV digital simple, conçu pour mettre en avant mes compétences en développement web et trouver un stage ou un premier emploi. Il reflète mon envie d’apprendre et d’expérimenter avec les bibliothèques JavaScript et le design frontend.
 
 ## Points Clés
