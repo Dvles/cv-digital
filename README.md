@@ -21,9 +21,9 @@ Un CV digital simple, conçu pour mettre en avant mes compétences en développe
 
 ## Points Clés
 - Technos Utilisées : HTML, CSS, JavaScript
-- Priorité Design : Navigation simple et intuitive
+- Priorité Design : Navigation simple et intuitive (moins de click possibles)
 - Éléments Interactifs : Effets JavaScript légers pour améliorer l’expérience utilisateur
-- 
+  
 ## Principes du Design Suisse 
 - Typographie lisible
 - Espaces blancs généreux
