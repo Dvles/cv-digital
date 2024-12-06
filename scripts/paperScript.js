@@ -2,7 +2,7 @@
 paper.setup('myCanvas');
 
 // Create a raster item:
-var raster = new paper.Raster('./assets/pixelcut.png');
+var raster = new paper.Raster('./assets/pixelcut2.png');
 
 var loaded = false;
 
