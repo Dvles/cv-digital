@@ -251,38 +251,48 @@ document.addEventListener("DOMContentLoaded", () => {
   const gfxFilter = document.querySelector(".gfx-filter");
   const allSteps = document.querySelectorAll(".step");
 
-  // Web filter logic - only show steps with 'web' class
-  webFilter.addEventListener("click", () => {
-    allSteps.forEach(step => {
-      if (step.classList.contains("web")) {
-        step.classList.remove("hidden");
-      } else {
-        step.classList.add("hidden");
-      }
-    });
+  // Event listener for Web Filter
+  webFilter.addEventListener("change", () => {
+    if (webFilter.checked) {
+      gfxFilter.checked = false; // Uncheck Gfx filter
 
-    // Update filter button styles
-    webFilter.classList.add("active-filter");
-    webFilter.classList.remove("unactive-filter");
-    gfxFilter.classList.add("unactive-filter");
-    gfxFilter.classList.remove("active-filter");
+      // Show only steps with 'web' class
+      allSteps.forEach(step => {
+        if (step.classList.contains("web")) {
+          step.classList.remove("hidden");
+        } else {
+          step.classList.add("hidden");
+        }
+      });
+
+      // Update styles
+      webFilter.classList.add("active-filter");
+      webFilter.classList.remove("unactive-filter");
+      gfxFilter.classList.add("unactive-filter");
+      gfxFilter.classList.remove("active-filter");
+    }
   });
 
-  // Gfx filter logic - only show steps with 'gfx' class
-  gfxFilter.addEventListener("click", () => {
-    allSteps.forEach(step => {
-      if (step.classList.contains("gfx")) {
-        step.classList.remove("hidden");
-      } else {
-        step.classList.add("hidden");
-      }
-    });
+  // Event listener for Gfx Filter
+  gfxFilter.addEventListener("change", () => {
+    if (gfxFilter.checked) {
+      webFilter.checked = false; // Uncheck Web filter
 
-    // Update filter button styles
-    gfxFilter.classList.add("active-filter");
-    gfxFilter.classList.remove("unactive-filter");
-    webFilter.classList.add("unactive-filter");
-    webFilter.classList.remove("active-filter");
+      // Show only steps with 'gfx' class
+      allSteps.forEach(step => {
+        if (step.classList.contains("gfx")) {
+          step.classList.remove("hidden");
+        } else {
+          step.classList.add("hidden");
+        }
+      });
+
+      // Update styles
+      gfxFilter.classList.add("active-filter");
+      gfxFilter.classList.remove("unactive-filter");
+      webFilter.classList.add("unactive-filter");
+      webFilter.classList.remove("active-filter");
+    }
   });
 });
 
