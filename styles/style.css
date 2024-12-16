@@ -690,26 +690,22 @@ figure.sticky {
     display: none;
 }
 
-.active-filter {
+.checkbox-group2 .active-filter {
     font-weight: bold;
     font-size: 30px;
 }
 
-.unactive-filter {
-    opacity: 0.4;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: crosshair;
-}
-
-.unactive-filter:hover {
-    opacity: 0.8;
+.checkbox-group2 .unactive-filter {
+    opacity: 0.4; /* Apply opacity to the entire label */
     font-size: 30px;
     font-weight: bold;
     cursor: crosshair;
-
 }
 
+.checkbox-group2 .unactive-filter:hover {
+    opacity: 0.8; /* Hover effect */
+    cursor: crosshair;
+}
 .checkbox-group2 .unactive-filter input[type="checkbox"] {
     opacity: 0.8;
   }

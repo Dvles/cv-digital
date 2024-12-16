@@ -265,11 +265,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Update styles
+      // Update styles for web filter (checkbox and label)
       webFilter.classList.add("active-filter");
       webFilter.classList.remove("unactive-filter");
+      webFilter.closest('label').classList.add("active-filter"); // Add active to the label
+      webFilter.closest('label').classList.remove("unactive-filter"); // Remove unactive from the label
+
+      // Update styles for gfx filter (checkbox and label)
       gfxFilter.classList.add("unactive-filter");
       gfxFilter.classList.remove("active-filter");
+      gfxFilter.closest('label').classList.add("unactive-filter");
+      gfxFilter.closest('label').classList.remove("active-filter");
     }
   });
 
@@ -287,11 +293,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Update styles
+      // Update styles for gfx filter (checkbox and label)
       gfxFilter.classList.add("active-filter");
       gfxFilter.classList.remove("unactive-filter");
+      gfxFilter.closest('label').classList.add("active-filter"); // Add active to the label
+      gfxFilter.closest('label').classList.remove("unactive-filter"); // Remove unactive from the label
+
+      // Update styles for web filter (checkbox and label)
       webFilter.classList.add("unactive-filter");
       webFilter.classList.remove("active-filter");
+      webFilter.closest('label').classList.add("unactive-filter");
+      webFilter.closest('label').classList.remove("active-filter");
     }
   });
 });
