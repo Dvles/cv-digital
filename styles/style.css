@@ -710,18 +710,36 @@ figure.sticky {
 
 }
 
+.checkbox-group2 .unactive-filter input[type="checkbox"] {
+    opacity: 0.8;
+  }
+  
 
-.checkbox-group2{
+
+
+#filters-prj {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: flex-end; 
+    justify-content: center; 
+}
+
+.checkbox-group2 label {
+    display: flex; 
+    align-items: center; 
+    flex-direction: row-reverse; 
+    
+}
+
+.checkbox-group2 {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
     cursor: crosshair;
-  }
-  
-  .checkbox-group2 label {
-     /* margin-right: 15px; */
-  }
-  
+}
+
+
+ 
   /* Default checkbox style */
   .checkbox-group2 input[type="checkbox"] {
     width: 20px;
@@ -733,6 +751,8 @@ figure.sticky {
     border-radius: 4px; /* Rounded corners */
     transition: background-color 0.3s ease, border-color 0.3s ease;
     cursor: crosshair;
+    margin-top: 8px;
+    margin-left: 10px;
   }
   
   /* Checked checkbox */
