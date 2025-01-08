@@ -164,9 +164,27 @@ input[type="checkbox"]:checked::after {
   }
 }
 
+@media (max-width: 804px) {
+
+  /* ➔➔➔➔ Skills  */
+  div.button-group button {
+      font-size: 15px;
+  }
+
+}
+
 @media (max-width: 690px) {
   .table-like__item > * {
 font-size: 15px;
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  /* ➔➔➔➔ Skills  */
+  div.button-group button {
+      font-size: 15px;
   }
 
 }

@@ -110,7 +110,7 @@ html {
     background-color: rgba(255, 255, 255, 0.899);
     text-decoration: underline;
     border-radius: 0.5em;
-  }
+}
 
 
 .menu-item.empty-column {
@@ -251,7 +251,7 @@ li.menu-item-end.m-projects a {
 }
 
 #name-cta {
-    color: #79e88278;
+    color: #79e88241;
     transition: color 0.8s ease;
 }
 
@@ -1141,11 +1141,8 @@ footer {
         border: 5px solid rgba(41, 255, 17, 0);
         width: 70%;
         margin-left: auto;
-        /* Pushes the container to the right */
         margin-right: 0;
-        /* Ensures it aligns fully to the right */
         display: block;
-        /* Ensures standard layout unless flexbox is required elsewhere */
     }
 
     .skills-isotope #container9 {
@@ -1178,6 +1175,7 @@ footer {
     }
 
 }
+
 
 
 
