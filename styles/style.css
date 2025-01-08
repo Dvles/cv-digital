@@ -631,6 +631,38 @@ article {
     align-items: flex-start;
 }
 
+.step-content img {
+    filter: saturate(-5);
+}
+
+.step-content img:hover {
+    filter: saturate(1.4);
+}
+
+
+.step-content .p-description a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black; 
+    padding-bottom: 0;
+    line-height: 1; 
+    display: inline-block; 
+    margin-top: 10px;
+}
+
+
+.step-content .p-description a:hover {
+    font-weight: bold;
+    border-bottom: 3px dashed #79e882cf; 
+    cursor: crosshair;
+}
+
+.step-content .p-description span {
+    margin-right: 10px;
+}
+
+
+
 .step-content div {
     flex: 1;
 }
@@ -652,13 +684,10 @@ h3 {
 
 .step h3 {
     font-weight: bold;
-
 }
 
 .step p {
-
     font-weight: 400;
-
 }
 
 
