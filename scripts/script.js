@@ -209,39 +209,45 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   // Select the filter detail elements
   const allFilterDetails = document.querySelectorAll(".filter-detail");
+  const isDesktop = window.matchMedia("(min-width: 800px)").matches; 
 
-  // Select the filter buttons
-  const btnNameFilter = document.querySelector(".btn-name-filter");
-  const btnLevelFilter = document.querySelector(".btn-level-filter");
-  const btnDomainFilter = document.querySelector(".btn-domain-filter");
-  const btnOriginalFilter = document.querySelector(".btn-original-filter");
+  if (isDesktop){
 
-  // Function to hide all filter details
-  function hideAllFilterDetails() {
-    allFilterDetails.forEach(filterDetail => {
-      filterDetail.classList.add("hidden"); // Add 'hidden' to all filter details
+    // Select the filter buttons
+    const btnNameFilter = document.querySelector(".btn-name-filter");
+    const btnLevelFilter = document.querySelector(".btn-level-filter");
+    const btnDomainFilter = document.querySelector(".btn-domain-filter");
+    const btnOriginalFilter = document.querySelector(".btn-original-filter");
+  
+    // Function to hide all filter details
+    function hideAllFilterDetails() {
+      allFilterDetails.forEach(filterDetail => {
+        filterDetail.classList.add("hidden"); // Add 'hidden' to all filter details
+      });
+    }
+  
+    // Add hover event listeners to each button
+    const buttonDetailsMap = [
+      { button: btnOriginalFilter, detail: document.querySelector("#filter-original") },
+      { button: btnNameFilter, detail: document.querySelector("#filter-name") },
+      { button: btnDomainFilter, detail: document.querySelector("#filter-domain") },
+      { button: btnLevelFilter, detail: document.querySelector("#filter-level") }
+    ];
+  
+    buttonDetailsMap.forEach(({ button, detail }) => {
+      button.addEventListener("mouseenter", () => {
+        hideAllFilterDetails(); // Hide all other filter details
+        detail.classList.remove("hidden"); // Show the corresponding filter detail
+      });
+  
+      button.addEventListener("mouseleave", () => {
+        detail.classList.add("hidden"); // Hide the filter detail when mouse leaves
+      });
     });
+
   }
-
-  // Add hover event listeners to each button
-  const buttonDetailsMap = [
-    { button: btnOriginalFilter, detail: document.querySelector("#filter-original") },
-    { button: btnNameFilter, detail: document.querySelector("#filter-name") },
-    { button: btnDomainFilter, detail: document.querySelector("#filter-domain") },
-    { button: btnLevelFilter, detail: document.querySelector("#filter-level") }
-  ];
-
-  buttonDetailsMap.forEach(({ button, detail }) => {
-    button.addEventListener("mouseenter", () => {
-      hideAllFilterDetails(); // Hide all other filter details
-      detail.classList.remove("hidden"); // Show the corresponding filter detail
-    });
-
-    button.addEventListener("mouseleave", () => {
-      detail.classList.add("hidden"); // Hide the filter detail when mouse leaves
-    });
-  });
 });
+
 
 
 
