@@ -411,14 +411,15 @@ margin-left: 2px;
 
 span.tooltip:nth-child(1), #see-less > p:nth-child(1) {
     text-decoration: none;
-    border-bottom: 2px dashed #79e882cf; 
-    padding-bottom: 1px; 
+    border-bottom: 1px solid black; 
+    padding-bottom: 0;
+    line-height: 1; 
+    display: inline-block;  
 }
 
 span.tooltip:nth-child(1):hover, #see-less > p:nth-child(1):hover {
-    color: #79e882cf;
-    border-bottom: 5px solid #79e8825b; 
-    padding-bottom: 0; 
+    font-weight: bold;
+    border-bottom: 3px dashed #79e882cf; 
     cursor: crosshair;
 }
 
@@ -427,15 +428,16 @@ span.tooltip:nth-child(1):hover, #see-less > p:nth-child(1):hover {
 #bio a {
     color: #000000;
     text-decoration: none;
-    border-bottom: 2px dashed #79e882cf; 
-    padding-bottom: 1px; 
-    font-weight: bold;
+    border-bottom: 1px solid black; 
+    padding-bottom: 0;
+    line-height: 1; 
+    display: inline-block;
 }
 
 #bio a:hover {
-    color: #79e882cf;
-    border-bottom: 5px solid #79e8825b; 
-    padding-bottom: 0; 
+    font-weight: bold;
+    border-bottom: 3px dashed #79e882cf; 
+    cursor: crosshair;
 }
 
 #education,
@@ -610,7 +612,7 @@ article {
 
 .step img{
     border-radius: 1em 0 0 1em ;
-    filter: blur(2px);
+    filter: blur(2px) grayscale(0.8);
 }
 
 .step:last-of-type {
