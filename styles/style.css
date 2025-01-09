@@ -833,14 +833,15 @@ figure.sticky {
 .internship-cta p a{
     color: #000000;
     text-decoration: none;
-    border-bottom: 2px dashed #79e882cf; 
-    padding-bottom: 1px; 
+    border-bottom: 1px solid black; 
+    padding-bottom: 0;
+    line-height: 1; 
+    display: inline-block;
 }
 
 .internship-cta p a:hover {
-    color: #79e882cf;
-    border-bottom: 5px solid #79e8825b; 
-    padding-bottom: 0; 
+    font-weight: bold;
+    border-bottom: 3px dashed #79e882cf; 
     cursor: crosshair;
 }
 
