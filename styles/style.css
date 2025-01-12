@@ -694,6 +694,12 @@ h3 {
     font-weight: 400;
 }
 
+p.narrow-p  {
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+
 
 
 .step h5 span {
@@ -704,6 +710,7 @@ h3 {
     margin-top: 100px !important;
     border-radius: 5px;
     font-weight: 400;
+    font-size: 12px;
     max-width: 80%;
     margin-bottom: 5%;
     line-height: 30px;
