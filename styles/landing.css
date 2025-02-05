@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Short+Stack&family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-optical-sizing: auto;
 }
+
+
+#myCanvas {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+}
+
 
 html, body {
     height: 100%;
+    font-family: "Host Grotesk", sans-serif;
 }
 
 main.display-flex {
