@@ -1199,6 +1199,35 @@ footer {
 
 @media (max-width: 690px) {
 
+    html, body {
+        margin: 0;
+        height: 100%;
+        overflow-x: hidden;  /* Disable scroll on body */
+    }
+    
+    header, footer {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        background-color: white;
+    }
+    
+    header {
+        top: 0;
+    }
+    
+    footer {
+        bottom: 0;
+    }
+    
+    main {
+        margin-top: 60px;  /* Space for header */
+        margin-bottom: 60px; /* Space for footer */
+        overflow-y: auto;  /* Content scrolls here */
+        height: 100vh;  /* Ensure the content takes full screen */
+    }
+    
+
 
     /* ➔➔➔➔ PRESENTATION  */
     #play-cta{
