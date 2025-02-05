@@ -1462,6 +1462,17 @@ footer {
     }
 }
 
+@media (max-width: 450px) {
+
+
+    /* ➔➔➔➔ Presentation */
+
+    #name-cta h1 {
+z-index: -30 !important;
+    }
+
+}
+
 
 
 @media (max-width: 412px) {
