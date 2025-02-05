@@ -1316,6 +1316,17 @@ footer {
         flex-direction: column !important;
     }
 
+    #scrolly-side #my_projects > article, div.step:nth-child(3) > div:nth-child(1){
+        background-color: rgba(255, 255, 255, 0.502);
+        background-image: radial-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+        background-size: 3px 3px;
+        z-index: 3;
+    }
+
+    #filters-prj{
+        z-index: 30;
+    }
+
 
     figure.sticky {
         /*background-color: #007BFF;*/
