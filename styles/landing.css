@@ -26,7 +26,7 @@ html, body {
 main.display-flex {
     display: flex;
     width: 100%;
-    height: 80%;
+    height: 100%;
 
 }
 
@@ -35,8 +35,8 @@ main.display-flex {
     flex-direction: column;
     justify-content: space-between; 
     width: 50%;
-    height: 100%;
-    margin: 0 5%;
+    height: 90%;
+    margin:  5%;
 
 }
 
@@ -47,6 +47,22 @@ main.display-flex {
 .left {
 
     text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000000;
+    cursor: crosshair;
+    text-decoration: none;
+    border-radius: 0.5em;
+    border-bottom: 3px dashed #79e882cf; 
+    cursor: crosshair;
 }
 
 
