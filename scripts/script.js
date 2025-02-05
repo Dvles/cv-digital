@@ -33,7 +33,6 @@ window.onclick = function(event) {
 } 
 
 
-
 // ➔➔ MENU SCROLL HIGHLIGHT
 
 $(document).ready(function () {
@@ -59,22 +58,27 @@ $(document).ready(function () {
 
     // Highlight the corresponding menu link
     menuLinks.each(function () {
-      const linkHref = $(this).attr('href').substring(1); 
+      const linkHref = $(this).attr('href').substring(1);
       if (linkHref === currentSection) {
-        $(this).parent().addClass('active');  
-        $(this).parent().siblings().removeClass('active');  
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
       }
     });
   }
 
-  // Listen for scroll events
+  // Listen for scroll events, but only if screen width is 700px or greater
   $(window).on('scroll', function () {
-    updateActiveMenuItem();
+    if ($(window).width() >= 700) {  // Only run if screen width is 700px or greater
+      updateActiveMenuItem();
+    }
   });
 
   // Trigger the function on page load to highlight the active section initially
-  updateActiveMenuItem();
+  if ($(window).width() >= 700) {  // Ensure it's applied only on larger screens
+    updateActiveMenuItem();
+  }
 });
+
 
 
 // ➔➔ PRESENTATION NAME CTA
