@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Short+Stack&family=Space+Grotesk:wght@300..700&display=swap');
 
-/* General body styling */
+/* #region General body styling */
 body {
     margin: 0;
     font-family: "Host Grotesk", sans-serif;
@@ -51,10 +51,10 @@ body,
 html {
     scroll-padding-top: 105px;
 }
+/* #endregion */
 
 
-
-/* ➔➔➔ MENU w CSS GRID */
+/* #region ➔➔➔ MENU w CSS GRID */
 .menu {
     border: 5px solid rgba(255, 0, 212, 0);
     position: fixed;
@@ -128,10 +128,10 @@ li.menu-item-end.m-projects a {
     margin-right: 10px !important;
 }
 
+/* #endregion */
 
 
-
-/* ➔➔➔➔ MAIN CONTENT - KEY MARGINS➔➔➔➔ */
+/* #region ➔➔➔➔ MAIN CONTENT - KEY MARGINS➔➔➔➔ */
 .layout {
     border: 5px solid rgba(152, 213, 253, 0);
     height: auto;
@@ -174,8 +174,9 @@ li.menu-item-end.m-projects a {
     box-sizing: border-box;
 }
 
+/* #endregion */
 
-/* ➔➔➔➔ MODAL INFO  */
+/* #region ➔➔➔➔ MODAL INFO  */
 
  /* The Modal (background) */
  .modal {
@@ -220,26 +221,27 @@ li.menu-item-end.m-projects a {
     width: 100%;
   }
 
-
-
-
+  
+  
   
   /* The Close Button */
   .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  } 
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+    
+    /* #endregion */
 
-/* ➔➔➔➔ PRESENTATION  */
+/* #region ➔➔➔➔ PRESENTATION  */
 
 #name-cta h1 {
     display: flex;
@@ -383,9 +385,9 @@ margin-left: 2px;
     text-align: right;
 }
 
+/* #endregion */
 
-
-/* ➔➔➔➔ BIO  */
+/* #region ➔➔➔➔ BIO  */
 #bio {
     margin-top: 28%;
     flex-direction: row;
@@ -522,12 +524,9 @@ span.tooltip:nth-child(1):hover, #see-less > p:nth-child(1):hover {
 }*/
 
 
+/* #endregion */
 
-
-
-
-
-/* ➔➔➔➔ SKILLS  */
+/*  #region ➔➔➔➔ SKILLS  */
 
 #skills-details {
     font-size: 21px;
@@ -582,11 +581,9 @@ color:  #79e882;
 
 
 
+/* #endregion */
 
-
-
-
-/* ➔➔➔➔ PROJECTS SCROLL */
+/* #region ➔➔➔➔ PROJECTS SCROLL */
 #scrolly-side .scrolly {
     display: flex;
     margin: 3rem auto;
@@ -811,12 +808,10 @@ figure.sticky {
     transform: translate(-50%, -50%);
   }
   
+/* #endregion */
 
 
-
-
-
-/* ➔➔➔ CONTACT */
+/* #region ➔➔➔ CONTACT */
 
 .c-layout {
     border: 5px solid rgba(152, 213, 253, 0);
@@ -871,10 +866,9 @@ figure.sticky {
     line-height: 1;
 }
 
+/* #endregion */
 
-
-
-/* ➔➔➔➔ FOOTER */
+/* #region ➔➔➔➔ FOOTER */
 
 footer {
     margin: 2% 1%;
@@ -917,9 +911,9 @@ footer {
     visibility: hidden;
 }
 
+/* #endregion */
 
-
-/* ➔➔➔➔ (RA) RESPONSIVE ADJUSTMENTS ➔➔➔➔ */
+/* #region ➔➔➔➔ (RA) RESPONSIVE ADJUSTMENTS ➔➔➔➔ */
 
 @media (max-width: 1481px) {
     /* ➔➔➔➔ PROJECTS SCROLL */
@@ -1587,8 +1581,6 @@ z-index: -30 !important;
 
     }
 
-
-
-
-
 }
+
+/* #endregion */
