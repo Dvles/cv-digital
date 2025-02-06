@@ -4,42 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello! I'm Leslie Devota</title>
+    <title>OHello! I'm Leslie Devota</title>
+    <link rel="stylesheet" href="./styles/landing.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js"></script>
-    <link rel="stylesheet" href="./styles/paperStyles.css">
     <script src="./scripts/paperScript.js" defer></script>
 </head>
 
 <body>
     <canvas id="myCanvas"></canvas>
-    <header id="header" class="menu">
-        <nav>
-            <ul class="menu-layout">
-                <li class="menu-item-start skills"><a href="./pages/internjrdev.html">ENGLISH</a></li>
-                <li class="menu-item-end m-contact"><a href="./pages/internjrdev.html">FRENCH</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+    <main class="display-flex">
 
-
-    <section id="presentation" class="layout-p">
-        <div id="welcome" class="ct-v-1">
-            <h1>
-                
-                Welcome<br><em>Bienvenue</em>
-
-                <br>
-
-                <span>Would you help me<br> focus my coding?<br><br>
-                <em>Pourrais-tu m'aider <br>à coder plus clairement?</em></span>
-
-            </h1>
+        <div class="landing left">
+            <div class="divTop">
+                <h1>Welcome<br></h1>
+                <a href="./pages/internjrdev.html">Enter</a>
+            </div>
+            <div class="divBottom">
+                <p>Would you help me<br> focus my coding?<br></p>
+            </div>
         </div>
-        
-    </div>
 
-    </section>
+        <div class="landing right">
+            <div class="divTop">
+                <h1>Bienvenue</h1>
+                <a href="">Enter</a>
+            </div>
+            <div class="divBottom">
+                <p>Pourrais-tu m'aider à </br>coder plus clairement?</p>
+            </div>
+        </div>
+    </main>
 </body>
-
 </html>
