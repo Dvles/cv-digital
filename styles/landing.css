@@ -82,6 +82,7 @@ a:hover {
     justify-content: flex-end;
     width: 100%;
     flex-grow: 1; 
+    margin-bottom:  10%;
 }
 
 .landing p{
