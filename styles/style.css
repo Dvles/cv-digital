@@ -1178,6 +1178,13 @@ footer {
         display: none;
     }
 
+    .tooltip::after {
+        left: 0;
+        right: 0;
+        transform: none;
+        text-align: center;
+        white-space: normal; 
+    }
 
     /* ➔➔➔➔ BIO  */
     #bio {
