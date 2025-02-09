@@ -5,6 +5,7 @@ paper.setup('myCanvas');
 var raster = new paper.Raster('./assets/pixelcut2.png');
 
 var loaded = false;
+var revealMode = 1; // Declare globally to keep track of the reveal speed
 
 raster.on('load', function() {
     console.log('Image loaded');
@@ -26,9 +27,17 @@ function moveHandler(event) {
     size.width = Math.ceil(size.width / (isLandscape ? 2 : 1));
     size.height = Math.ceil(size.height / (isLandscape ? 1 : 2));
 
+    var adjustedSize = size.clone();
+
+    if (revealMode === 2) {
+        adjustedSize = size.ceil(); // Slightly faster
+    } else if (revealMode === 3) {
+        adjustedSize = size.multiply(1.5).ceil(); // Even faster
+    }
+
     var path1 = new paper.Path.Rectangle({
         point: this.bounds.topLeft,
-        size: size,
+        size: adjustedSize,
         onMouseMove: moveHandler
     });
     path1.fillColor = raster.getAverageColor(path1);
@@ -73,3 +82,9 @@ function scrollToContent() {
     });
 }
 
+// Listen for click events to increase the reveal speed
+document.addEventListener('click', function() {
+    revealMode++; // Increase reveal speed
+    if (revealMode > 3) revealMode = 1; // Loop back to normal speed after mode 3
+    console.log('Click detected. Reveal speed:', revealMode); // Log the mode
+});
