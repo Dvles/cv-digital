@@ -73,14 +73,18 @@ function scrollToContent() {
     });
 }
 
-// Change background color on mouse click
+// Array of predefined colors
 const colors = ["#f9ffc0", "#79e882cf", "#b7fe88", "#09ff54", "#f3ff86", "#ecff3b"];
 
-document.body.addEventListener('click', function () {
-    document.body.style.backgroundColor = getRandomColor();
-});
-
+// Function to get a random color from the predefined array
 function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
+
+// Change background color on mouse click (only when clicking the body, not the canvas)
+document.body.addEventListener('click', function (event) {
+    if (event.target.id !== "myCanvas") {
+        document.body.style.backgroundColor = getRandomColor();
+    }
+});
 
