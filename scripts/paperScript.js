@@ -88,8 +88,19 @@ const textmoji = [
 
 // Function to generate a random green color
 function getRandomGreen() {
-    const greenShades = ["#00FF00", "#32CD32", "#228B22", "#ADFF2F", "#7FFF00", "#98FB98", "#2E8B57"];
-    return greenShades[Math.floor(Math.random() * greenShades.length)];
+    const greenPinkBlackshades = [
+        "#90EE90",  // LightGreen
+        "#98FB98",  // PaleGreen
+        "#A9DFBF",  // LightSeaGreen
+        "#B0E57C",  // MediumSpringGreen
+        "#7FFF00",  // Chartreuse (light green)
+        "#C1E1C1",  // LightMintGreen
+        "#32CD32",  // LimeGreen (still light but a little brighter)
+        "#FF1493",  // DeepPink (Magenta Pink)
+        "#FF69B4",  // HotPink (Magenta Pink)
+        "#000000"   // Black
+    ];
+        return greenPinkBlackshades[Math.floor(Math.random() * greenPinkBlackshades.length)];
 }
 
 document.addEventListener('click', function(event) {
@@ -107,7 +118,7 @@ document.addEventListener('click', function(event) {
         fontSize: 30
     });
 
-    // text moji with random green color
+    // text moji with random color
     const emojiText = new paper.PointText({
         point: new paper.Point(Math.random() * paper.view.size.width, Math.random() * paper.view.size.height),
         content: emoji,
@@ -120,4 +131,16 @@ document.addEventListener('click', function(event) {
     // fade-out effects
     greetingText.tween({ opacity: 0 }, 2000);
     emojiText.tween({ opacity: 0 }, 2000);
+});
+
+
+// Let's work CTA
+document.addEventListener('click', function(event) {
+    
+    const mousePosition = new paper.Point(event.clientX, event.clientY);
+    const image = new paper.Raster('./assets/letscode_2.png');
+    
+    image.position = mousePosition;
+    image.opacity = 0;  
+    image.tween({ opacity: 1 }, 5);  
 });
