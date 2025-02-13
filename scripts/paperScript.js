@@ -73,27 +73,32 @@ function scrollToContent() {
     });
 }
 
-// Change background color on mouse click
-const colors = ["#f9ffc0", "#79e882cf", "#b7fe88", "#09ff54", "#f3ff86", "#ecff3b"];
-
-document.body.addEventListener('click', function () {
-    document.body.style.backgroundColor = getRandomColor();
-});
-
-function getRandomColor() {
-    return colors[Math.floor(Math.random() * colors.length)];
-}
 
 const greetings = [
-    "Hello", "Hola", "Bonjour", "Ciao", "Hallo", "Olá", "Привет", "你好", "こんにちは", "안녕하세요", "Merhaba", "नमस्ते"
+    "Hello", "Hola", "Bonjour", "Ciao", "Hallo", "Olá", "Привет", "你好", "こんにちは", "안녕하세요", "Merhaba", "नमस्ते", "01001000 01001001",
+    "Sawubona", "Molo", "Jambo", "Salam", "Bawo ni", "Dumela", "Kóyí", "Sannu", "Nnọọ", "Akwabaa", "Mhoro", "Sanibonani",
+    "Salut", "Coucou", "Yo", "Hi there!", "Greetings", "Dag", "Gutentag", "Aiya", "01001000 01001001", "Wah Gwaan"
 ];
 
-document.addEventListener('click', function(event) {
-    // Pick a random greeting
-    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+const textmoji = [
+    "꒰ · ◡ · ꒱", "⊂◉‿◉つ", "ヽ(•‿•)ノ", "（＾ω＾）", "⊂ ◉ ‿ ◉ つ", "｡^‿^｡", "(＊๑˘◡˘)", "ʘ ‿ ʘ", "(ᴗᵔᴥᵔ)", 
+    "♡´･ᴗ･`♡", "≧ ◡ ≦", "ʕ·ᴥ·ʔ", "(⊙‿⊙ ✿)", " ヅ ", "❀ ‿ ❀", "✿ ｡ ✿",
+"☆(◒‿◒)☆", "( ಠ◡ಠ )","^‿^","(▰˘◡˘▰)", "{◕ ◡ ◕}","｡◕‿◕｡"
+];
 
-    // Create a text item in Paper.js
-    const text = new paper.PointText({
+// Function to generate a random green color
+function getRandomGreen() {
+    const greenShades = ["#00FF00", "#32CD32", "#228B22", "#ADFF2F", "#7FFF00", "#98FB98", "#2E8B57"];
+    return greenShades[Math.floor(Math.random() * greenShades.length)];
+}
+
+document.addEventListener('click', function(event) {
+    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+    const emoji = textmoji[Math.floor(Math.random() * textmoji.length)];
+    const greenColor = getRandomGreen();
+
+    // greeting text
+    const greetingText = new paper.PointText({
         point: new paper.Point(Math.random() * paper.view.size.width, Math.random() * paper.view.size.height),
         content: greeting,
         fillColor: 'black',
@@ -102,6 +107,17 @@ document.addEventListener('click', function(event) {
         fontSize: 30
     });
 
-    // Add a slight fade-out effect
-    text.tween({ opacity: 0 }, 2000);
+    // text moji with random green color
+    const emojiText = new paper.PointText({
+        point: new paper.Point(Math.random() * paper.view.size.width, Math.random() * paper.view.size.height),
+        content: emoji,
+        fillColor: greenColor,
+        fontFamily: 'Arial',
+        fontWeight: 'bold',
+        fontSize: 40
+    });
+
+    // fade-out effects
+    greetingText.tween({ opacity: 0 }, 2000);
+    emojiText.tween({ opacity: 0 }, 2000);
 });
