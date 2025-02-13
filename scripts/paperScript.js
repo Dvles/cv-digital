@@ -135,12 +135,18 @@ document.addEventListener('click', function(event) {
 
 
 // Let's work CTA
+let currentImage = 0;  
 document.addEventListener('click', function(event) {
-    
     const mousePosition = new paper.Point(event.clientX, event.clientY);
-    const image = new paper.Raster('./assets/letscode_2.png');
     
+    const imageFile = currentImage === 0 ? './assets/letuscode.png' : './assets/letscode.png';
+    
+    const image = new paper.Raster(imageFile);
     image.position = mousePosition;
     image.opacity = 0;  
     image.tween({ opacity: 1 }, 5);  
+    
+    // Toggle between the two images
+    currentImage = currentImage === 0 ? 1 : 0;
 });
+
