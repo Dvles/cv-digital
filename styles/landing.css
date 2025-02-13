@@ -90,7 +90,7 @@ a:hover {
     font-size: 18px;
 }
 
-/* Skaing! */
+/* Shaking!
 
 @keyframes shake {
     0% { transform: translateX(0); }
@@ -101,5 +101,5 @@ a:hover {
 }
 
 a.shake {
-    animation: shake 0.5s ease-in-out infinite;
-}
+    animation: shake 5s ease-in-out 2s infinite; 
+} */
