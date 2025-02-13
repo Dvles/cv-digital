@@ -84,3 +84,24 @@ function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
+const greetings = [
+    "Hello", "Hola", "Bonjour", "Ciao", "Hallo", "Olá", "Привет", "你好", "こんにちは", "안녕하세요", "Merhaba", "नमस्ते"
+];
+
+document.addEventListener('click', function(event) {
+    // Pick a random greeting
+    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+
+    // Create a text item in Paper.js
+    const text = new paper.PointText({
+        point: new paper.Point(Math.random() * paper.view.size.width, Math.random() * paper.view.size.height),
+        content: greeting,
+        fillColor: 'black',
+        fontFamily: 'Arial',
+        fontWeight: 'bold',
+        fontSize: 30
+    });
+
+    // Add a slight fade-out effect
+    text.tween({ opacity: 0 }, 2000);
+});
