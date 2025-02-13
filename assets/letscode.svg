@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258.87 84.95">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #c881b2;
+      }
+
+      .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        fill: #83bc6f;
+      }
+
+      .cls-2, .cls-13, .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4, .cls-15 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-16 {
+        font-family: NHaasGroteskDSPro-65Md, 'Neue Haas Grotesk Display Pro';
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-12, .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-17, .cls-18, .cls-19, .cls-15, .cls-20, .cls-14 {
+        fill: #272525;
+      }
+
+      .cls-18 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-19 {
+        letter-spacing: 0em;
+      }
+
+      .cls-21 {
+        fill: #62b06a;
+      }
+    </style>
+  </defs>
+  <text class="cls-16" transform="translate(10.29 28.11)"><tspan class="cls-20" x="0" y="0">con</tspan><tspan class="cls-15" x="19.81" y="0">s</tspan><tspan class="cls-20" x="25.51" y="0">t </tspan><tspan class="cls-3" x="31.51" y="0">l</tspan><tspan class="cls-4" x="34.25" y="0">e</tspan><tspan class="cls-3" x="40.66" y="0">tUs</tspan><tspan class="cls-7" x="58.34" y="0">C</tspan><tspan class="cls-3" x="66.61" y="0">ode</tspan><tspan class="cls-6" x="86.82" y="0">T</tspan><tspan class="cls-1" x="92.77" y="0">og</tspan><tspan class="cls-5" x="106.38" y="0">e</tspan><tspan class="cls-2" x="112.79" y="0">ther</tspan><tspan class="cls-14" x="134.1" y="0" xml:space="preserve"> = () =&gt; {</tspan><tspan class="cls-20" x="0" y="14.4" xml:space="preserve">          con</tspan><tspan class="cls-17" x="39.97" y="14.4">s</tspan><tspan class="cls-20" x="45.85" y="14.4">ol</tspan><tspan class="cls-19" x="55.48" y="14.4">e</tspan><tspan class="cls-20" x="61.94" y="14.4">.log(&quot;</tspan><tspan class="cls-8" x="89.64" y="14.4">LE</tspan><tspan class="cls-11" x="103.77" y="14.4">T</tspan><tspan class="cls-10" x="111.23" y="14.4">&apos;</tspan><tspan class="cls-8" x="113.46" y="14.4" xml:space="preserve">S  CODE  </tspan><tspan class="cls-9" x="161.77" y="14.4">T</tspan><tspan class="cls-13" x="168.68" y="14.4">OGETHE</tspan><tspan class="cls-12" x="216.69" y="14.4">R</tspan><tspan class="cls-20" x="224.56" y="14.4">&quot;);</tspan><tspan class="cls-20" x="0" y="28.8" xml:space="preserve">          con</tspan><tspan class="cls-17" x="39.97" y="28.8">s</tspan><tspan class="cls-20" x="45.85" y="28.8">ol</tspan><tspan class="cls-19" x="55.48" y="28.8">e</tspan><tspan class="cls-20" x="61.94" y="28.8">.log(</tspan><tspan class="cls-18" x="85.05" y="28.8">&quot;</tspan><tspan class="cls-21" x="89.34" y="28.8" xml:space="preserve">CODONS  ENSEMBLE</tspan><tspan class="cls-20" x="205.83" y="28.8">&quot;);</tspan><tspan class="cls-20"><tspan x="0" y="43.2">};</tspan></tspan></text>
+</svg>

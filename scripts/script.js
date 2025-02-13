@@ -290,6 +290,61 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// ➔➔ CONTACT DRAWING
+// Set up the canvas and context
+const canvas = document.getElementById("drawingCanvas");
+const ctx = canvas.getContext("2d");
+
+// Ensure the canvas size matches the section's size
+function resizeCanvas() {
+    const section = document.getElementById("contact");
+    canvas.width = section.offsetWidth;
+    canvas.height = section.offsetHeight;
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas(); // Initial resize
+
+// Variables for drawing
+let drawing = false;
+let lastX = 0;
+let lastY = 0;
+
+// Start drawing when the mouse is pressed down
+canvas.addEventListener("mousedown", (event) => {
+    drawing = true;
+    lastX = event.clientX - canvas.offsetLeft;
+    lastY = event.clientY - canvas.offsetTop;
+});
+
+// Draw while the mouse is moving
+canvas.addEventListener("mousemove", (event) => {
+    if (!drawing) return;
+
+    const currentX = event.clientX - canvas.offsetLeft;
+    const currentY = event.clientY - canvas.offsetTop;
+
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(currentX, currentY);
+    ctx.strokeStyle = "#ff6347";  // Choose a color
+    ctx.lineWidth = 5;            // Set the thickness
+    ctx.lineCap = "round";
+    ctx.stroke();
+
+    lastX = currentX;
+    lastY = currentY;
+});
+
+// Stop drawing when the mouse button is released
+canvas.addEventListener("mouseup", () => {
+    drawing = false;
+});
+
+// Also stop drawing if the mouse leaves the canvas
+canvas.addEventListener("mouseleave", () => {
+    drawing = false;
+});
 
 
 
