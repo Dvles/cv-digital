@@ -136,6 +136,8 @@ document.addEventListener('click', function(event) {
 
 // Let's work CTA
 let currentImage = 0;  
+const images = [];  // Store references to the images
+
 document.addEventListener('click', function(event) {
     const mousePosition = new paper.Point(event.clientX, event.clientY);
     
@@ -146,7 +148,16 @@ document.addEventListener('click', function(event) {
     image.opacity = 0;  
     image.tween({ opacity: 1 }, 5);  
     
+    images.push(image); 
+
     // Toggle between the two images
     currentImage = currentImage === 0 ? 1 : 0;
 });
 
+// Listen for "R" key press to remove images
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'r' || event.key === 'R' || event.key === 'Backspace' || event.key === 'Delete') {  
+        images.forEach(img => img.remove());  
+        images.length = 0;  
+    }
+});
