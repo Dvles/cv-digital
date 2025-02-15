@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dévellopeuse web jr + graphiste</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/isotope.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/enter-view@2.0.1/enter-view.min.js" defer></script>
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header id="header" class="menu">
+        <nav>
+            <ul class="menu-layout">
+                <li class="menu-item-start bio"><a href="#bio">Bio</a></li>
+                <li class="menu-item-start skills"><a href="#skills">Compétences</a></li>
+                <li class="menu-item-end m-projects"><a href="#scrolly-side">Projets</a></li>
+                <li class="menu-item empty-column"></li>
+                <li class="menu-item-end m-contact"><a href="#contact">Contact</a></li>
+                <li id="myBtn" class="menu-item-end lang"><a href="https://drive.google.com/uc?export=download&id=1UIo9HvbVC30WJeZUk2c0fJGayyFbhRrp">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="presentation" class="layout-p">
+        <div id="name-cta" class="ct-v-1">
+            <h1>
+                <a href="#presentation">
+                    hello! I'm<br>
+                    leslie devota
+                </a>
+                <br>
+
+                <a id="play-cta"href="../index.html">
+                    ◄<span> Let's play</span>
+                </a>
+
+            </h1>
+        </div>
+        <div id="about-text" class="ct-v-2">
+            <div class=" w-50 margin-l bdr">
+                <h2>Jr Web Dev. <span>+</span> Graphiste</h2>
+                <p>Curieuse et passionnée, mon parcours a commencé dans la musique, où j'ai découvert l'importance de la narration à travers les mélodies. Cette soif d'apprendre m'a ensuite orientée vers la coordination digitale, un domaine que j'ai exploré en autodidacte, cherchant à associer créativité et technologie pour répondre à des besoins concrets. Au fil du temps, j'ai réorienté mes compétences vers le graphisme, puis vers le développement web, pour approfondir mes connaissances et mieux comprendre les outils qui permettent de créer.<br><br>
+
+                    Aujourd'hui, en tant que développeuse web junior en apprentissage vers le fullstack, je continue d'apprendre et d'expérimenter, avec l'envie de créer des solutions simples et utiles, alliant code et design, pour répondre aux défis du quotidien.</p>
+            </div>
+        </div>
+        <div id="highlights" class="ct-v-2">
+            <div class=" w-50 margin-r bdr text-right">
+                <h2>
+                    <br><span class="tooltip" data-tooltip="Rêve de créer des expériences interactives">créativité</span></br>
+                    <span class="tooltip" data-tooltip="Collaborer avec respect en équipe">teamwork</span></br>
+                    <span class="tooltip" data-tooltip="Adore l'idée d'apprendre et d'explorer de nouvelles idées">curiosité</span></br>
+                    <span class="tooltip" data-tooltip="Guidé par une volonté réfléchie">Intentionnel</span></br>
+                    <span class="tooltip" data-tooltip="Illustrer concepts & idées">sketching</span></br>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="bio" class="layout">
+        <div id="education" class="ct-h-1">
+            <h3>Éducation</h3>
+            <div class="bio-content">
+                <p><strong>EUROPASS et CECAF métier<br> "Web Developer"</strong><br>
+                    Interface 3
+                    <a href="https://interface3.be/fr/se-former-pour-l-emploi/it-training-formations-en-informatique/web-application-developer" target="_blank">(IF3)</a><br>
+                    Bruxelles (BE)<br>
+                    <span>2024 → 2025</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+            <div class="bio-content">
+                <p><strong>BA Techniques infographiques <br>Communication graphique <br>& publicitaire </strong><br>
+                    Haute École Albert
+                    Jacquard <a href="https://www.heaj.be/fr/formations/bacheliers/1ere-bac-techniques-infographiques/" target="_blank"> (HEAJ)</a><br>
+                    Namur (BE)<br>
+                    <span>2023</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+            <div class="bio-content">
+                <p><strong>BA Professional
+                        Musicianship: <br>instrument chant </strong><br>
+                    British and Irish Institute<br>
+                    of Modern Music <a href="https://www.bimm.ac.uk/courses/bmus-hons-music-performance/" target="_blank">(BIMM)</a><br>
+                    Bristol (UK)<br>
+                    <span>2014</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience" class="ct-h-1">
+            <h3>Experience</h3>
+            <div class="bio-content">
+                <p><strong>Hackathon "Green IT"<br>
+                    </strong>Interface3 <a href="https://interface3.be/fr/se-former-pour-l-emploi/it-training-formations-en-informatique/web-application-developer" target="_blank">(IF3)</a><br>
+                    Bruxelles (BE)<br>
+                    <span>2024</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+            <div class="bio-content">
+                <p><strong>Graphiste freelance<br>
+                        Projets variés</strong><br>
+                    Bruxelles (BE)<br>
+                    <span>2023 → 2024</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+            <div class="bio-content">
+                <p><strong>Graphiste (stage)
+                    </strong><br>
+                    Signélazer
+                    <a href="https://www.signelazer.com/" target="_blank">(+)</a><br>
+                    Bruxelles (BE)<br>
+                    <span>2022 → 2023 (3 mois)</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+            <div class="bio-content">
+                <p><strong> Coordinatrice digitale <br>
+                        / infographiste</strong><br>
+                    Nonzēro Africa
+                    <a href="https://nonzero-africa.com/" target="_blank">(+)</a><br>
+                    Johannesburg (SA)<br>
+                    <span>2017 → 2021</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+            <div class="bio-content extra-experience">
+                <p><strong>Animatrice / Host Festival
+                    </strong><br>
+                    Rising Moon Festival <a href="" target="_blank"></a><br>
+                    Braine-le-comte (BE)<br>
+                    <span>2015 → 2017 (été)</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+            <div class="bio-content extra-experience">
+                <p><strong>Compositeur et interprète</strong><br>
+                    Viva End Rose<br> Bruxelles (BE)<br>
+                    <span>2014 → 2016</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+
+            <div class="bio-content extra-experience">
+                <p><strong>Coach vocal / compositeur<br> pour comédie musicale</strong><br>
+                    Petits-Pas ONG <a href="https://www.petitspas.be/" target="_blank">(+)</a><br> Braine-le-comte (BE)<br>
+                    <span>2014 → 2015 (5 mois)</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+
+            <div class="bio-content extra-experience">
+                <p><strong>Recruteuse de donateurs /<br> Croix-Rouge</strong><br>
+                    ONG Conseil, Bruxelles (BE)<br>
+                    <span>2014 → 2015 (8 mois)</span>
+                </p>
+                <div class="extra-content">
+                    <p>Additional details about the role or an image can go here! Additional details about the role or
+                        an image</p>
+                </div>
+            </div>
+
+            <div id="see-more">
+                <p><span class="tooltip" data-tooltip="Attention - changement d'ambiance iminente">(plus)</span></p>
+            </div>
+
+            <div id="see-less" class="hidden">
+                <p><span>(moins)</span></p>
+            </div>
+
+            <div class="download">
+                <p><a href="https://drive.google.com/uc?export=download&id=1UIo9HvbVC30WJeZUk2c0fJGayyFbhRrp" target="_blank"><strong>↳ Téléchargez cv</strong></a></p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="skills" class="layout row-center">
+        <div id="skills-details" class="flex w-50-h-100">
+            <div id="filter-original" class="ct-h-2 origial filter-detail">
+                <span>//</span> Trier par mon ordre original - pensez-y comme un algorithme non raffiné, mais avec un
+                bon potentiel !!
+            </div>
+            <div id="filter-domain" class="ct-h-2 domain hidden filter-detail">
+                <span>//</span> Trier par domaines pour voir comment j'ai appris à porter plusieurs casquettes de
+                développeur - l'adaptabilité est essentielle, et je suis à fond !
+            </div>
+
+            <div id="filter-name" class="ct-h-2 name hidden filter-detail">
+                <span>//</span> Trier par nom par ordre alphabétique - même les variables doivent parfois se mettre en
+                ligne :]
+            </div>
+            <div id="filter-level" class="ct-h-2 domain hidden filter-detail">
+                <span>//</span> Trier par niveau pour voir où j'en suis - j'ai tenté de m'auto-évaluer, sachant qu'il y a
+                toujours de la place pour s'améliorer!
+            </div>
+        </div>
+        <div id="skills-isotope" class="flex w-50-h-100">
+            <div id="container9" class="ct-h-3">
+                <!-- Filter options -->
+
+                <div id="filters" class="checkbox-group">
+                    <label><input type="checkbox" value="web" checked> Web</label>
+                    <label><input type="checkbox" value="graphics" checked> Graphisme</label>
+                </div>
+
+                <!-- Sorting options -->
+
+                <div id="sorts" class="button-group">
+                    <button class="button is-checked btn-original-filter" data-sort-value="original-order">
+                        Ordre Original</button>
+                    <button class="button btn-name-filter" data-sort-value="name">Nom</button>
+                    <button class="button btn-domain-filter" data-sort-value="domain">Domaine</button>
+                    <button class="button btn-level-filter" data-sort-value="level">Niveau</button>
+                </div>
+
+                <ul class="table-like">
+                    <!-- Programming Languages -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">JavaScript</div>
+                        <div class="domain">Frontend
+                        </div>
+                        <div class="level">47.0</div> <!-- débutante -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">PHP 5</div>
+                        <div class="domain">Backend</div>
+                        <div class="level">55.5</div> <!-- pré-intermédiaire -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">Python</div>
+                        <div class="domain">
+                            Backend</div>
+                        <div class="level">43.9</div> <!-- débutante -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">C#</div>
+                        <div class="domain">Backend</div>
+                        <div class="level">42.2</div> <!-- débutante -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">SQL</div>
+                        <div class="domain">Database</div>
+                        <div class="level">51.8</div> <!-- débutante -->
+                    </li>
+
+                    <!-- Web Technologies -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">HTML5</div>
+                        <div class="domain">Frontend
+                        </div>
+                        <div class="level">64.7</div> <!-- intermédiaire -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">CSS3</div>
+                        <div class="domain">Frontend
+                        </div>
+                        <div class="level">62.2</div> <!-- pré-intermédiaire -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">AJAX</div>
+                        <div class="domain">Frontend
+                        </div>
+                        <div class="level">45.9</div> <!-- initiée -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">JSON</div>
+                        <div class="domain">Backend</div>
+                        <div class="level">45.2</div> <!-- initiée -->
+                    </li>
+
+                    <!-- Frameworks -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">React</div>
+                        <div class="domain">Framework</div>
+                        <div class="level">40.9</div>
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">Bootstrap</div>
+                        <div class="domain">Framework</div>
+                        <div class="level">44.8</div>
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">Symfony</div>
+                        <div class="domain">Framework</div>
+                        <div class="level">53.6</div> <!-- débutante -->
+                    </li>
+
+                    <!-- CMS -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">WordPress</div>
+                        <div class="domain">CMS</div>
+                        <div class="level">70.3</div> <!-- compétente -->
+                    </li>
+
+                    <!-- Tools -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">GitHub</div>
+                        <div class="domain">Version-control</div>
+                        <div class="level">49.2</div> <!-- débutante -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">Visual Studio Code</div>
+                        <div class="domain">IDE</div>
+                        <div class="level">54.3</div> <!-- débutante -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">Visual Studio</div>
+                        <div class="domain">IDE</div>
+                        <div class="level">41.2</div> <!-- débutante -->
+                    </li>
+
+                    <!-- Databases -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">MySQL</div>
+                        <div class="domain">Database</div>
+                        <div class="level">50.4</div> <!-- débutante -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">PhpMyAdmin</div>
+                        <div class="domain">Database</div>
+                        <div class="level">50.5</div> <!-- pré-intermédiaire -->
+                    </li>
+
+                    <!-- Methodologies -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">SCRUM</div>
+                        <div class="domain">Gestion</div>
+                        <div class="level">64.3</div> <!-- débutante -->
+                    </li>
+
+                    <!-- Web Servers -->
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">Apache</div>
+                        <div class="domain">Servers</div>
+                        <div class="level">53.2</div> <!-- débutante -->
+                    </li>
+                    <li class="table-like__item" data-category="web">
+                        <div class="name">IIS</div>
+                        <div class="domain">Servers</div>
+                        <div class="level">43.1</div> <!-- débutante -->
+                    </li>
+
+                    <!-- GRAPHIC DESIGN Skills -->
+                    <!-- Summary for Graphics -->
+                    <li class="table-like__item" data-category="graphics" data-display-group="graphics-summary">
+                        <div class="name">Adobe Creative Suite</div>
+                        <div class="domain">Print/digital</div>
+                        <div class="level">70.9</div> <!-- intermédiaire -->
+                    </li>
+
+                    <!-- Detailed Graphic Design Skills -->
+                    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+                        <div class="name">Photoshop</div>
+                        <div class="domain">Print/digital</div>
+                        <div class="level">78.7</div> <!-- compétente -->
+                    </li>
+                    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+                        <div class="name">Illustrator</div>
+                        <div class="domain">Print/digital</div>
+                        <div class="level">66.8</div> <!-- pré-intermédiaire -->
+                    </li>
+                    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+                        <div class="name">InDesign</div>
+                        <div class="domain">Print</div>
+                        <div class="level">69.8</div> <!-- intermédiaire -->
+                    </li>
+                    <li class="table-like__item" data-category="graphics" data-display-group="graphics-detailed">
+                        <div class="name">After Effects</div>
+                        <div class="domain">Digital</div>
+                        <div class="level">68.4</div> <!-- pré-intermédiaire -->
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="scrolly-side">
+        <div id="my_projects" class="scrolly">
+            <figure class="sticky">
+
+                <div id="filters-prj" class="projects-filter text-right checkbox-group2">
+                    <label class="active-filter">
+                        <input type="checkbox" value="web" checked class="active-filter web-filter">
+                        applications web
+                    </label>
+                    <label class="unactive-filter">
+                        <input type="checkbox" value="graphics" class="gfx-filter">
+                        graphisme
+                    </label>
+                </div>
+
+            </figure>
+
+            <article>
+                <div class="step web" data-category="p-web" data-index="0">
+                    <div class="step-content">
+                        <div>
+                            <a href="http://wad08.interface3.be/tool/display/all" target=”_blank”><img src="../assets/Toolswap6.webp" alt="Placeholder Image"></a>
+                        </div>
+                        <div class="p-description">
+                            <h3>ToolSwap</h3>
+                            <p>Une application web d'économie collaborative pour prêter et emprunter des outils entre voisins, réduisant la surconsommation et renforçant les liens locaux. Créez un compte, proposez des objets, sélectionnez les disponibilités dans le calendrier, empruntez et laissez des avis.</p>
+                            <p class="narrow-p"><span>▸</span><a href="http://wad08.interface3.be/tool/display/all" target=”_blank”>Site</a><br>
+                            <span>▸</span><a href="https://github.com/Dvles/ToolSwap_app" target=”_blank”>Github</a><br>
+                            </p>
+                            <h5><span>PHP</span><span>SYMFONY</span><span>JS</span><span>BOOTSTRAP</span></h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="step web" data-category="p-web" data-index="1">
+                    <div class="step-content">
+                        <div>
+                            <a href="https://github.com/Dvles/TextMoji-Toolbox" target=”_blank”><img src="../assets/Textmoji-Recovered.webp" alt="TextMoji-Toolbox"></a>
+                        </div>
+                        <div class="p-description">
+                            <h3>TextMoji ToolBox</h3>
+                            <p>Une extension Chrome pour copier et utiliser des emoji à base de texte dans les chats desktop (facebook, WhatsApp,..). Envie d'essayer ou de créer une sélection customisée? Cloner le dépôt et proposer des améliorations via des pull requests pour faire évoluer l'extension.</p>
+                            <p class="narrow-p"><span>▸</span><a href="https://github.com/Dvles/TextMoji-Toolbox/archive/refs/heads/main.zip" target=”_blank”>Download & Install</a><br>
+                                <span>▸</span><a href="https://github.com/Dvles/TextMoji-Toolbox" target=”_blank”>Github</a><br>
+                            </p>
+                            <h5><span>JS</span><span>HTML/CSS</span><span>JSON</span></h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="step web" data-category="p-web" data-index="2">
+                    <div class="step-content">
+                        <div>
+                            <a href="https://github.com/Dvles/miserecord" target=”_blank”><img src="/assets/miserecord.webp" alt="Miserecord"></a>
+                        </div>
+                        <div class="p-description">
+                            <h3>MISERECORD</h3>
+                            <p>Un site conçu pour un label musical fictif, mettant en avant artistes, albums, genres et produits (merch, vinyles, artworks). Ce projet se concentre sur l'architecture des bases de données et la gestion des rôles via un panneau admin sécurisé.</p>
+                            <p class="narrow-p"><span>▹</span>Site en développement<br>
+                                <span>▸</span><a href="https://github.com/Dvles/miserecord" target=”_blank”>Github</a><br>
+                            </p>
+                            <h5><span>PHP</span><span>SYMFONY</span><span>AJAX</span><span>API</span><span>JS</span></h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="step web" data-category="p-web" data-index="3">
+                    <div class="step-content">
+                        <div>
+                            <a href="https://hackathon24.interface3.be/techortrees/" target=”_blank”><img src="../assets/Tech1.webp" alt="Hackathon Interface3"></a>
+                        </div>
+                        <div class="p-description">
+                            <h3>Tech'Or'Trees</h3>
+                            <p>Quizz imagé où chaque choix impacte l'environnement. Conçu en petit groupe lors d'un hackathon sur le Green IT à Interface3, ce projet vise à sensibiliser l'utilisateurs face à ces choix quotidiens. Qu'allez vous choisir? Tech or trees? 🌱</p>
+                            <p class="narrow-p"><span>▸</span><a href="https://hackathon24.interface3.be/techortrees/" target=”_blank”>Let's Play!</a><br>
+                            </p>
+                            <h5><span>JS</span><span>HTML/CSS</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="step web" data-category="p-web" data-index="4">
+                    <div class="step-content">
+                        <div>
+                            <img src="../assets/csharp.webp" alt="Hackathon Interface3">
+                        </div>
+                        <div class="p-description">
+                            <h3>C# Web application</h3>
+                            <p>création d'une base de données, gestion des sessions utilisateur et développement d'une interface. </p>
+                            
+                            <p class="narrow-p"><span>▹</span>Site en développement<br>
+                            </p>
+                            <h5><span>C#</span><span>ASP.NET</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="step web" data-category="p-web" data-index="5">
+                    <div class="step-content">
+                        <div>
+                            <a href="https://jvguesthouse.co.za/" target=”_blank”><img src="../assets/JVG2.webp" alt="JV Guesthouse - Wordpress web development"></a>                        </div>
+                        <div class="p-description">
+                            <h3>J&V's Guesthouse</h3>
+                            <p>Un site vitrine pour un AirBnB incluant l'installation de WordPress, la customization de thèmes via plugins WYSIWYG et une maintenance continue.</p>
+                            <p class="narrow-p"><span>▸</span><a href="https://jvguesthouse.co.za/" target=”_blank”>site</a><br>
+                            </p>
+                            <h5><span>WORDPRESS</span><span>ELEMENTOR</span><span>YELLOW PENCIL</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="step gfx hidden" data-category="gfx" data-index="6">
+                    <div class="step-content">
+                        <div>
+                            <img src="../assets/AA2.webp" alt="AltrAfro">
+                        </div>
+                        <div class="p-description">
+                            <h3>ALTR AFRO [GLOBAL BRANDING]</h3>
+                            <p>Une plateforme éditoriale dédiée aux récits et expressions artistiques pan-africains. Projet de TFE à l'HEAJ, lauréat du prix du jury, alliant identité graphique, typographie, UX/UI, illustrations et animations pour une expérience fluide célébrant une créativité sans limites.</p>
+                            <p class="narrow-p"><span>▸</span><a href="https://www.youtube.com/watch?v=icBNX7x18cE" target=”_blank”>Plateforme</a><br>
+                                
+                                <span>▸</span><a href="https://fliphtml5.com/xicxp/hxkw/TFE%3A_%CE%9BLT-R_AFRO_%28website_concept%29/79/" target=”_blank”>Brochure</a><br></p>
+                                <h5><span>WORDPRESS</span><span>ELEMENTOR</span><span>AE</span> <span>PSD</span><span>Illustrator</span><span>Indesign</span><span>Figma</span>
+                                    </h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step gfx hidden" data-category="gfx" data-index="7">
+                    <div class="step-content">
+                        <div>
+                            <img src="../assets/reinel.webp" alt="Rebranding africa museum">
+                        </div>
+                        <div class="p-description">
+                            <h3>Silver Armour [ANIMATION] </h3>
+                            <p>Animation du logotype pour le titrage de fin de clip, reflétant les textures vocales organiques et mouvantes de Reinel Bakole. Les déformations visuelles traduisent les nuances de sa voix, entre fluidité et douceur captivante.</p>
+                             <span>▸</span><a href="https://www.youtube.com/watch?v=UwF8w2RC_Pw" target=”_blank”>Clip</a><br>
+                                </p>
+                                <h5><span>AE</span></h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step gfx hidden" data-category="gfx" data-index="8">
+                    <div class="step-content">
+                        <div>
+                            <img src="../assets/miser.webp" alt="Rebranding miserecord">
+                        </div>
+                        <div class="p-description">
+                            <h3>MISERECORD [BRANDING]</h3>
+                            <p>Branding d'un label musical fictif conçu en groupe, pour réfleter son identité cosmopolite au caractère hardiesse. Le projet inclut; identité visuelle, design de vinyles collector, affiches et guideline photographiques.</p>
+                            <p class="narrow-p"><span>▸</span><a href="https://anyflip.com/vrirf/axqr/" target=”_blank”>Charte graphique</a><br>
+                            <span>▸</span><a href="https://www.behance.net/gallery/153325493/Vinyl-design-MISERECORD" target=”_blank”>Vinlys</a><br></p>
+                            <h5><span>AE</span><span>Illustrator</span><span>Indesign</span><span>PSD</span></h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step gfx hidden" data-category="gfx" data-index="9">
+                    <div class="step-content">
+                        <div>
+                            <a href="https://drive.google.com/file/d/1TLqW5GOD6y2MXmvnHYit2ojGIPqEozcJ/view?usp=sharing" target=”_blank”><img src="../assets/reginot-1.webp" alt="Animation Top départ 2023 avec le Manège de Reims"></a>
+                        </div>
+                        <div class="p-description">
+                            <h3>Top Départ | Réginot Chopinot [ANIMATION]</h3>
+                            <p>Une carte de vœux animée destiné aux réseaux sociaux, réalisée lors de mon stage chez Signélazer, capturant l'essence du spectacle phare du Manège de Reims: les traversées des danseurs et l'énergie des tambours.</p>
+                            <p class="narrow-p"><span>▸</span><a href="https://drive.google.com/file/d/1TLqW5GOD6y2MXmvnHYit2ojGIPqEozcJ/view?usp=sharing" target=”_blank”>Vidéo</a><br>
+                            </p>
+                            <h5><span>AE</span><span>Illustrator</span></h5>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- <div class="step gfx hidden" data-category="gfx" data-index="10">
+                    <div class="step-content">
+                        <div>
+                            <img src="../assets/africamu2.webp" alt="Rebranding africa museum">
+                        </div>
+                        <div class="p-description">
+                            <h3>Africa Museum [REBRANDING]</h3>
+                            <p>Rebranding inspiré du designer Laduma Ngxokolo, reflétant la créativité contemporaine africaine et de la diaspora. Affiches, cartes de visite, bracelets (VIP, presse, staff) et supports visuels conçus pour incarner dialogue interculturel et renouveau.</p>
+                            <p class="narrow-p"><span>▸</span><a href="https://anyflip.com/vrirf/jcrj/" target=”_blank”>Supports</a><br>
+                                </p>
+                            <h5><span>Identité</span><span>typographie</span><span>motifs</span><span>LAYOUT</span></h5>
+                        </div>
+                    </div>
+                </div> -->
+                
+                
+            </article>
+        </div>
+    </section>
+
+    
+
+
+    <section id="contact" class="c-layout">
+        <div class="internship-cta">
+            <p>Je suis actuellement disponible pour un stage du <span class="tooltip black" data-tooltip="Possibilité de commencer plus tôt">5 Mai au 27 Juin.</span> Si vous cherchez une stagiaire motivée pour
+                rejoindre votre équipe et relever de nouveaux défis, n'hésitez pas à me contacter.</p>
+            <p>Pressé(e) ? <a href="https://drive.google.com/uc?export=download&id=1UIo9HvbVC30WJeZUk2c0fJGayyFbhRrp" target="_blank"><strong>Téléchargez mon CV</strong></a> afin de le consulter
+                off-line.
+                <strong><br><br><span>♫</span> ꒰･‿･๑꒱</strong>
+            </p>
+        </div>
+        <div class="tagline">
+            <h1>Collaborons ensemble</h1>
+        </div>
+        
+        <!-- Hidden Canvas for Drawing -->
+        <canvas id="drawingCanvas"></canvas>
+    </section>
+    
+
+
+    <footer>
+        <ul class="contact-layout">
+            <li class="flex-start"><a href="https://www.linkedin.com/in/leslie-habimana-devota/" target="_blank">Linkedin</a></li>
+            <li class="flex-start"><a href="https://github.com/Dvles" target="_blank">Github</a></li>
+            <li class="flex-start"><a href="https://www.behance.net/habimanaleslie/" target="_blank">Behance</a></li>
+            <li class="empty-column"></li>
+            <li class="flex-start"><a href="mailto:devotaleslie@gmail.com?cc=l.habimana@interface3.be">email</a></li>
+
+        </ul>
+
+    </footer>
+
+
+</body>
+
+</html>

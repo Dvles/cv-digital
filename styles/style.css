@@ -824,6 +824,10 @@ section.c-layout {
     line-height: 1;
 }
 
+.black {
+    color: black !important;
+}
+
 /* #endregion */
 
 /* #region ➔➔➔➔ FOOTER */
