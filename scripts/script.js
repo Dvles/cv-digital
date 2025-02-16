@@ -1,11 +1,10 @@
-console.log("(•‿•)");
+console.log(" ( • ‿ • )");
 console.log("Hello IT world");
 console.log("Let's work together!");
-console.info("AVAILABLE: FROM XX to XX");
+console.info("AVAILABLE: FROM 5.05 to 27.06");
 
 
 // ➔➔ MENU SCROLL HIGHLIGHT
-
 $(document).ready(function () {
   // Cache selectors
   const sections = $('section');
