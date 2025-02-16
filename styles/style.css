@@ -53,7 +53,6 @@ html {
 }
 /* #endregion */
 
-
 /* #region ➔➔➔ MENU w CSS GRID */
 .menu {
     border: 5px solid rgba(255, 0, 212, 0);
@@ -130,7 +129,6 @@ li.menu-item-end.m-projects a {
 
 /* #endregion */
 
-
 /* #region ➔➔➔➔ MAIN CONTENT - KEY MARGINS➔➔➔➔ */
 .layout {
     border: 5px solid rgba(152, 213, 253, 0);
@@ -177,8 +175,6 @@ li.menu-item-end.m-projects a {
 /* #endregion */
 
 /* #region ➔➔➔➔ MODAL INFO  */
-
-
 
 /* #region ➔➔➔➔ PRESENTATION  */
 
@@ -323,6 +319,64 @@ margin-left: 2px;
 .text-right {
     text-align: right;
 }
+
+/* Basic styling for the tooltip text */
+span.tooltip_img {
+    text-decoration: underline;
+    color: black !important;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Hover effect for the tooltip text */
+span.tooltip_img:hover {
+    text-decoration: none;
+    border-bottom: 3px dashed #79e882cf; 
+    padding-bottom: -5px !important;
+    margin-bottom: -5px !important;
+    cursor: crosshair;
+}
+
+/* Tooltip container styling */
+.tooltip_img .tooltiptext_img {
+    visibility: hidden;
+    width: 340px;  /* Adjusted to make room for the iframe */
+    height: 260px;  /* Adjusted to fit the iframe properly */
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    margin-left: -170px;  /* Centers the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip on hover */
+.tooltip_img:hover .tooltiptext_img {
+    visibility: visible;
+    opacity: 1;
+    cursor: crosshair;
+}
+
+/* Styling the iframe inside the tooltip */
+.tooltip_img .tooltiptext_img iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Optional: Add a smooth transition effect for the iframe display */
+.tooltip_img:hover .tooltiptext_img iframe {
+    transition: opacity 0.3s ease;
+}
+
+
+
 
 /* #endregion */
 
@@ -748,7 +802,6 @@ figure.sticky {
   }
   
 /* #endregion */
-
 
 /* #region ➔➔➔ CONTACT */
 
