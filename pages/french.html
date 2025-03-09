@@ -16,12 +16,12 @@
 
     <body>
         <header id="header" class="menu">
-            <nav>
+            <nav role="navigation">
                 <ul class="menu-layout">
                     <li class="menu-item-start bio"><a href="#bio">Bio</a></li>
                     <li class="menu-item-start skills"><a href="#skills">Compétences</a></li>
                     <li class="menu-item-end m-projects"><a href="#scrolly-side">Projets</a></li>
-                    <li class="menu-item empty-column"></li>
+                    <li class="menu-item empty-column" aria-hidden="true"></li>
                     <li class="menu-item-end m-contact"><a href="#contact">Contact</a></li>
                     <li id="myBtn" class="menu-item-end lang"><a href="https://drive.google.com/uc?export=download&id=1UIo9HvbVC30WJeZUk2c0fJGayyFbhRrp">CV</a></li>
                 </ul>
@@ -37,7 +37,7 @@
                     </a>
                     <br>
 
-                    <a id="play-cta"href="../index.html">
+                    <a id="play-cta"href="../index.html" aria-label="Retour à la page d'accueil">
                         ◄<span> Let's play</span>
                     </a>
 
@@ -70,6 +70,9 @@
                 </div>
             </div>
         </section>
+
+
+        
 
         <section id="bio" class="layout">
             <div id="education" class="ct-h-1">
@@ -199,20 +202,20 @@
         <section id="skills" class="layout row-center">
             <div id="skills-details" class="flex w-50-h-100">
                 <div id="filter-original" class="ct-h-2 origial filter-detail">
-                    <span>//</span> Trier par mon ordre original - pensez-y comme un algorithme non raffiné, avec du potentiel !!
+                    <span>//</span> Trier par mon ordre original - pensez-y comme un algorithme non raffiné, avec du potentiel 
                 </div>
                 <div id="filter-domain" class="ct-h-2 domain hidden filter-detail">
                     <span>//</span> Trier par domaines pour voir comment j'ai appris à porter plusieurs casquettes de
-                    développeur - l'adaptabilité est essentielle, et je suis à fond !
+                    développeur - l'adaptabilité est essentielle, et je suis à fond 
                 </div>
 
                 <div id="filter-name" class="ct-h-2 name hidden filter-detail">
-                    <span>//</span> Trier par nom par ordre alphabétique - même les variables doivent parfois se mettre en
+                    <span>//</span> Trier par ordre alphabétique - même les variables doivent parfois se mettre en
                     ligne :]
                 </div>
                 <div id="filter-level" class="ct-h-2 domain hidden filter-detail">
                     <span>//</span> Trier par niveau pour voir où j'en suis - j'ai tenté de m'auto-évaluer, sachant qu'il y a
-                    toujours de la place pour s'améliorer!
+                    toujours de la place pour s'améliorer
                 </div>
             </div>
             <div id="skills-isotope" class="flex w-50-h-100">
@@ -590,11 +593,11 @@
             </div>
         </section>
 
-        <section id="contact" class="c-layout">
+        <section id="contact" class="c-layout" role="region" aria-labelledby="contact-title">
             <div class="internship-cta">
                 <p>Je suis actuellement disponible pour un stage du <span class="tooltip black" data-tooltip="Possibilité de commencer plus tôt">5 Mai au 27 Juin.</span> Si vous cherchez une stagiaire motivée pour
                     rejoindre votre équipe et relever de nouveaux défis, n'hésitez pas à me contacter.</p>
-                <p>Pressé(e) ? <a href="https://drive.google.com/uc?export=download&id=1UIo9HvbVC30WJeZUk2c0fJGayyFbhRrp" target="_blank"><strong>Téléchargez mon CV</strong></a> afin de le consulter
+                <p>Pressé(e) ? <a href="https://drive.google.com/uc?export=download&id=1UIo9HvbVC30WJeZUk2c0fJGayyFbhRrp" target="_blank" aria-label="Télécharger mon CV en format PDF"><strong>Téléchargez mon CV</strong></a> afin de le consulter
                     off-line.
                     <strong><br><br><span>♫</span> ꒰･‿･๑꒱</strong>
                 </p>
