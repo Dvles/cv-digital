@@ -133,7 +133,7 @@ document.addEventListener('click', function(event) {
     emojiText.tween({ opacity: 0 }, 2000);
 });
 
-
+/* 
 // Let's work CTA
 let currentImage = 0;  
 const images = [];  // Store references to the images
@@ -161,3 +161,4 @@ document.addEventListener('keydown', function(event) {
         images.length = 0;  
     }
 });
+ */
