@@ -991,7 +991,21 @@ footer {
     .step p, h3, h5  {
         max-width: 97% !important;
     }
+
+    /* ➔➔➔➔ Project MISERECORD TEMPORARY FIX */
+    .miserecord-p {
+        flex: none !important;
+        max-width: 97% !important;
+    }
+    
+    .miserecord-img {
+        flex: none !important;
+        min-width: auto !important;
+    }
+    
 }
+
+
 
 @media (max-width: 1045px) {
 
